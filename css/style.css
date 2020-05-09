@@ -90,10 +90,10 @@
 
 .what-we-do-topper h2 {
     color: #121212;
-    font-size: 1.3em;
+    font-size: 1.7em;
     font-weight: 900;
     text-align: center;
-    width: 150px;
+    width: 200px;
     margin: auto;
     position: relative;
     display: -webkit-box;
@@ -105,21 +105,31 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    background: #fff;
     margin-bottom: 20px;
     margin-top: 50px;
 }
 
 .what-we-do-topper h2 span {
     color: var(--primary);
-    margin-right: 4px;
+    margin-right: 10px;
 }
 
 .what-we-do-topper h2:before {
     position: absolute;
     content: '';
     height: 3px;
-    width: 165px;
+    width: 10px;
+    left: -10px;
+    background: var(--primary);
+    z-index: -1;
+}
+
+.what-we-do-topper h2:after {
+    position: absolute;
+    content: '';
+    height: 3px;
+    width: 10px;
+    right: -10px;
     background: var(--primary);
     z-index: -1;
 }
@@ -141,6 +151,10 @@
     color: var(--primary);
 }
 
+.what-topper {
+    margin-bottom: 100px;
+}
+
 .content {
     margin-top: 50px;
 }
@@ -160,7 +174,7 @@
 
 .what-we-do-content img {
     margin: 80px auto;
-    display: block;
+    display: none;
     width: 100%;
 }
 
@@ -217,7 +231,7 @@
     color: var(--primary);
 }
 
-.left > p {
+.left-text-group {
     margin-bottom: 40px;
 }
 
@@ -239,6 +253,10 @@
 .list-item {
     margin-bottom: 50px;
     padding-left: 42px;
+}
+
+.list-item:last-child {
+    margin-bottom: 0;
 }
 
 .list-item h3 {
@@ -264,15 +282,60 @@
 <--- -------------------------- -*/
 
 #portfolio h2 {
-    width: 200px;
+    color: #121212;
+    font-size: 1.7em;
+    font-weight: 900;
     text-align: center;
+    width: 230px;
     margin: auto;
-    margin-bottom: 40px;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 60px;
+}
+
+#portfolio h2 span {
+    color: var(--primary);
+    margin-right: 4px;
+}
+
+#portfolio h2:before {
+    position: absolute;
+    content: '';
+    height: 3px;
+    width: 10px;
+    left: -10px;
+    background: var(--primary);
+    z-index: -1;
+}
+
+#portfolio h2:after {
+    position: absolute;
+    content: '';
+    height: 3px;
+    width: 10px;
+    right: -10px;
+    background: var(--primary);
+    z-index: -1;
 }
 
 .example {
     margin-bottom: 70px;
     position: relative;
+    padding: 50px 25px;
+        background: #fff;
+        border-radius: 5px;
+        -webkit-box-shadow: 0px 0px 25px 15px rgba(0,0,0,0.1);
+        -moz-box-shadow: 0px 0px 25px 15px rgba(0,0,0,0.1);
+        box-shadow: 0px 0px 25px 15px rgba(0,0,0,0.1);
+        border-bottom: 5px solid var(--primary);
 }
 
 .example:last-child {
@@ -314,10 +377,10 @@
 
 .who-topper h2 {
     color: #121212;
-    font-size: 1.3em;
+    font-size: 1.7em;
     font-weight: 900;
     text-align: center;
-    width: 150px;
+    width: 190px;
     margin: auto;
     position: relative;
     display: -webkit-box;
@@ -329,7 +392,6 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    background: #fff;
     margin-bottom: 30px;
 }
 
@@ -342,7 +404,18 @@
     position: absolute;
     content: '';
     height: 3px;
-    width: 165px;
+    width: 10px;
+    left: -10px;
+    background: var(--primary);
+    z-index: -1;
+}
+
+.who-topper h2:after {
+    position: absolute;
+    content: '';
+    height: 3px;
+    width: 10px;
+    right: -10px;
     background: var(--primary);
     z-index: -1;
 }
@@ -499,56 +572,142 @@
 @media screen and (min-width: 500px) and (max-width: 800px) {
 
     .container {
-        max-width: 500px;
+        width: 100%;
+        max-width: 700px;
     }
 
     /*-- -------------------------- -->
     <---          LANDING           -->
     <--- -------------------------- -*/
 
+    #landing {
+        height: 800px;
+    }
+
+    #landing .container {
+        margin-top: 150px;
+    }
+
     #landing h1 {
-        width: 70%;
-        padding-top: 40px;
+        width: 500px;
+        font-size: 3em;
     }
 
     #landing h2 {
         width: 400px;
-    }   
-
-    .slanted-graphic {
-        height: 270px;
-        bottom: -150px;
+        font-size: 1.3em;
+        margin-bottom: 50px;
     }
 
-    .v-image {
-        width: 160px;
-        top: 230px;
-    }
-
-    .slanted-graphic ul {
-        top: 30px;
-        left: 0px;
-    }
-
-    .slanted-graphic ul li {
-        font-size: 1.2em;
+    .mock-up {
+        width: 600px;
+        right: 0;
     }
 
     /*-- -------------------------- -->
     <---         WHAT WE DO         -->
     <--- -------------------------- -*/
 
-    .who-we-are-topper h2 {
+    .what-topper {
+        width: 600px;
+        margin: auto;
+        margin-bottom: 100px;
+    }
+
+    .what-we-do-topper h2 {
+        font-size: 2em;
+        width: 250px;
+    }
+
+    .what-we-do-content {
+        width: 400px;
+    }
+
+    /*-- -------------------------- -->
+    <---           PRICING          -->
+    <--- -------------------------- -*/
+
+    .piggy-bank {
+        width: 400px;
         margin-top: 100px;
     }
 
-    .what-we-do-content img {
-        width: 450px;
+    .left-text-group h2 {
+        font-size: 2em;
     }
 
-    .item {
-        max-width: 320px;
-        margin: 60px auto;
+    .left-text-group p {
+        width: 400px;
+        margin-bottom: 90px;
+    }
+
+    .list-group {
+        margin-top: 50px;
+        position: relative;
+    }
+
+    .list-group:before {
+        content: url("/images/blob.svg");
+        position: absolute;
+        left: -700px;
+        opacity: .1;
+    }
+
+    .list-item {
+        width: 330px;
+    }
+
+    /*-- -------------------------- -->
+    <---         PORTFOLIO          -->
+    <--- -------------------------- -*/
+
+    #portfolio h2 {
+        font-size: 2em;
+        width: 290px;
+    }
+
+    #portfolio h2 span {
+        color: var(--primary);
+        margin-right: 10px;
+    }
+
+    .example-group {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .example {
+        width: 48%;
+        padding: 50px 25px;
+        background: #fff;
+        border-radius: 5px;
+        -webkit-box-shadow: 0 0 40px rgba(0,0,0,.1);
+    box-shadow: 0 0 40px rgba(0,0,0,.1);
+        border-bottom: 5px solid var(--primary);
+    }
+
+    .example:last-child {
+        margin-bottom: 70px;
+    }
+
+    .example img {
+        width: 80%;
+    }
+
+    /*-- -------------------------- -->
+    <---         WHO WE ARE         -->
+    <--- -------------------------- -*/
+
+    .who-topper h2 {
+        width: 230px;
+        font-size: 2em;
+    }
+
+    .who-topper p {
+        width: 600px;
+        margin: auto;
+        margin-bottom: 80px;
     }
 
 }
