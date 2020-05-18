@@ -815,7 +815,7 @@
     .item {
         width: 30%;
         margin: 0;
-        margin-bottom: 0px;
+        margin-bottom: 0px !important;
     }
 
     .item p {
