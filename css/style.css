@@ -466,7 +466,7 @@
 }
 
 .partner:before {
-    content: url("/images/blob\ -\ Copy.svg");
+    content: url("/images/blob-Copy.svg");
     position: absolute;
     z-index: -1;
     top: 40px;
