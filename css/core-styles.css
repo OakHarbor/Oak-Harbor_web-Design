@@ -1,3 +1,4 @@
+
 /*-- -------------------------- -->
 <---         CORE STYLES        -->
 <--- -------------------------- -*/
@@ -366,8 +367,68 @@ h1, h2, h3, h4, h5, h6 {
 	color: var(--primary);
 }
 
+/*-- -------------------------- -->
+<---           BOTTOM           -->
+<--- -------------------------- -*/
+
+#bottom {
+    background: url("/images/code-type.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+#bottom:before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: #000;
+    opacity: .7;
+}
+
+#bottom .container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#bottom h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #fff;
+}
+
+#bottom p {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #fff;
+    opacity: .95;
+}
+
+.bottom-button {
+    display: block;
+    margin: auto;
+    background: #fff;
+    font-weight: bold;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    color: #000;
+    font-size: 1em;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    height: auto;
+}
+
 /* Tablets */
 @media screen and (min-width: 500px) and (max-width: 1024px) {
+
+    #bottom .container {
+        width: 500px;
+    }
+
+    #bottom h2 {
+        font-size: 2em;
+    }
 
 }
 
@@ -383,61 +444,6 @@ h1, h2, h3, h4, h5, h6 {
 	.side-nav a {
 		opacity: 1;
 		visibility: visible;
-    }
-    
-    .top-nav-strip {
-        display: block;
-        height: 36px;
-        background: var(--primary);
-        width: 1500px;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: row;
-                flex-direction: row;
-        -webkit-box-pack: end;
-            -ms-flex-pack: end;
-                justify-content: flex-end;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
-        margin: auto;
-        position: relative;
-        z-index: 2000;
-    }
-
-    .top-nav-strip svg {
-        height: auto;
-        width: 20px;
-        -webkit-transition: ease .2s;
-        -o-transition: ease .2s;
-        transition: ease .2s;
-        margin-left: 20px;
-    }
-
-    .top-nav-strip a {
-        margin-left: 10px;
-        -webkit-transition: ease .2s;
-        -o-transition: ease .2s;
-        transition: ease .2s;
-    }
-
-    .top-nav-strip svg:hover {
-        cursor: pointer;
-        opacity: .6;
-        -webkit-transition: ease .2s;
-        -o-transition: ease .2s;
-        transition: ease .2s;
-    }
-
-    .top-nav-strip a:hover {
-        cursor: pointer;
-        opacity: .6;
-        -webkit-transition: ease .2s;
-        -o-transition: ease .2s;
-        transition: ease .2s;
     }
 
     .svg-group {
@@ -485,14 +491,14 @@ h1, h2, h3, h4, h5, h6 {
 		    -ms-flex-pack: center;
 		        justify-content: center;
         height: 124px;
-        background: #fff;
+        background: transparent;
         z-index: 100;
 	}
 
 	.navbar-menu {
-		width: 95% !important;
+		width: 1100px !important;
 		min-height: 100px;
-		height: 130px;
+		height: 100px;
 		margin: auto;
 		position: absolute;
 		display: -webkit-box;
@@ -506,18 +512,6 @@ h1, h2, h3, h4, h5, h6 {
 		background: transparent;
 	}
 
-	.navbar-menu:before {
-		content: '';
-		width: 100%;
-		height: 100%;
-		background: transparent;
-		opacity: 1;
-		position: absolute;
-		z-index: -1;
-        border-radius: 5px;
-        display: none;
-	}
-
 	#on-top {
 		display: -webkit-box;
 		display: -ms-flexbox;
@@ -527,12 +521,13 @@ h1, h2, h3, h4, h5, h6 {
 		        align-items: center;
 		-webkit-box-pack: end;
 		    -ms-flex-pack: end;
-		        justify-content: flex-end;
+                justify-content: flex-end;
+        margin: 0;
 	}
 
 	.side-nav {
 		padding: 0;
-		width: 100%;
+		width: 1100px;
 		height: 100%;
 		display: -webkit-box;
 		display: -ms-flexbox;
@@ -544,7 +539,6 @@ h1, h2, h3, h4, h5, h6 {
 		    -ms-flex-pack: end;
 		        justify-content: flex-end;
         right: 0;
-        top: 14px;
 	}
 
 	.side-nav ul li {
@@ -574,12 +568,13 @@ h1, h2, h3, h4, h5, h6 {
 
 	.side-nav a {
 		padding: 20px 0;
-        color: #212121;
+        color: #fff;
+        opacity: .7;
         font-weight: normal;
 		-webkit-transition: .2s ease;
 		-o-transition: .2s ease;
 		transition: .2s ease;
-        font-size: 1.125em;
+        font-size: 14px;
         font-weight: bold;
 	}
 
@@ -605,7 +600,15 @@ h1, h2, h3, h4, h5, h6 {
         color: #fff;
         opacity: 1 !important;
         border-bottom: 3px solid var(--primary);
-        color: var(--primary) !important;
+        color: #fff !important;
+    }
+
+    #bottom .container {
+        width: 600px;
+    }
+
+    #bottom h2 {
+        font-size: 2.5em;
     }
     
     @media screen and (min-width: 1025px) and (max-width: 1456px) {
@@ -779,6 +782,7 @@ footer img {
 
 .footer-item p {
     width: 230px;
+    margin-bottom: 10px;
 }
 
 .footer-item h2 {
@@ -804,26 +808,49 @@ footer img {
     margin-bottom: 30px;
 }
 
-.socialgroup {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
-}
+@media screen and (min-width: 1026px) {
 
-.socialgroup a {
-    color: var(--secondary);
-    margin: 10px;
-    text-decoration: none;
-    font-weight: 900;
-    margin-bottom: 20px;
+    footer img {
+        margin-top: 0;
+        margin-bottom: 56px;
+    }
+
+    .dark-mode-group {
+        position: relative;
+    }
+
+    .flex-group {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        padding-top: 0px;
+        position: relative;
+    }
+
+    .flex-group:before {
+        content: '';
+        position: absolute;
+        height: 1px;
+        width: 100%;
+        background: var(--primary);
+        bottom: 30px;
+    }
+
+    .footer-item {
+        margin-top: 100px;
+    }
+
+    .footer-item h2 {
+        margin-bottom: 50px;
+    }
+
+    .image-box {
+        -webkit-transform: translateY(-25px);
+            -ms-transform: translateY(-25px);
+                transform: translateY(-25px);
+    }
+
 }

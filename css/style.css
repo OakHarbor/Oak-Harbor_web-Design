@@ -53,7 +53,7 @@
     border-radius: 25px;
     position: relative;
     background: #fff;
-    color: var(--primary);
+    color: #404040;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -569,11 +569,16 @@
 }
 
 /* Tablets */
-@media screen and (min-width: 500px) and (max-width: 800px) {
+@media screen and (min-width: 500px) and (max-width: 1025px) {
 
     .container {
         width: 100%;
         max-width: 700px;
+    }
+
+    .mobile-nav {
+        max-width: 100%;
+        width: 100%;
     }
 
     /*-- -------------------------- -->
@@ -674,17 +679,28 @@
     .example-group {
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
         justify-content: space-between;
     }
 
     .example {
-        width: 48%;
+        width: 100%;
         padding: 50px 25px;
         background: #fff;
         border-radius: 5px;
         -webkit-box-shadow: 0 0 40px rgba(0,0,0,.1);
-    box-shadow: 0 0 40px rgba(0,0,0,.1);
+        box-shadow: 0 0 40px rgba(0,0,0,.1);
         border-bottom: 5px solid var(--primary);
+    }
+
+    .example:nth-child(2),
+    .example:nth-child(3) {
+        width: 45%;
+    }
+
+    .example:nth-child(2) p,
+    .example:nth-child(3) p {
+        height: 125px;
     }
 
     .example:last-child {
@@ -710,41 +726,210 @@
         margin-bottom: 80px;
     }
 
-}
-
-/* Tablets */
-@media screen and (min-width: 800px) and (max-width: 1000px) {
-
-    .container {
-        max-width: 750px;
-    }
-
     /*-- -------------------------- -->
-    <---          LANDING           -->
+    <---          REVIEWS           -->
     <--- -------------------------- -*/
 
+    .review-group {
+        margin-top: 100px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .review-group h2 {
+        font-size: 2em;
+        margin-bottom: 40px;
+        width: 100%;
+    }
+
+    .review {
+        width: 45%;
+    }
+
+}
+
+@media screen and (min-width: 1026px) {
+
+    /*-- -------------------------- -->
+    <---            HERO            -->
+    <--- -------------------------- -*/
+
+    #landing {
+        height: 800px;
+        margin-bottom: 0;
+    }
+
+    #landing .container {
+        width: 100%;
+        margin-top: 150px;
+    }
+
     #landing h1 {
+        font-size: 3em;
         width: 500px;
     }
 
     #landing h2 {
-        width: 400px;
+        width: 500px;
     }
 
-    .slanted-graphic {
-        height: 350px;
-        bottom: -200px;
+    .mock-up {
+        width: 700px;
+        right: 300px;
+        bottom: 70px;
     }
 
-    .v-image {
-        width: 200px;
-        top: 140px;
-        right: 50px;
+    .swoop {
+        width: 100%;
     }
 
-    .slanted-graphic ul li {
-        font-size: 1.5em;
-        top: 100px;
+    /*-- -------------------------- -->
+    <---         WHAT WE DO         -->
+    <--- -------------------------- -*/
+
+    .what-we-do-topper h2 {
+        font-size: 2.5em;
+        width: auto;
+        width: 300px;
+    }
+
+    .what-we-do-topper p {
+        width: 660px;
+        margin: auto;
+    }
+
+    .what-we-do-content:before {
+        display: none;
+    }
+
+    .content {
+        display: inline-block;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 0;
+    }
+    
+    .item {
+        width: 30%;
+        margin: 0;
+        margin-bottom: 0px;
+    }
+
+    .item p {
+    }
+
+    .item:last-child {
+        margin-bottom: 50px;
+    }
+
+    /*-- -------------------------- -->
+    <---           PRICING          -->
+    <--- -------------------------- -*/
+
+    #pricing {
+        height: auto;
+    }
+
+    #pricing .container {
+        max-width: 1200px;
+    }
+
+    .piggy-bank {
+        display: inline-block;
+        width: 500px;
+        transform: translateY(100px);
+    }
+
+    .left {
+        display: inline-block;
+        width: 600px;
+    }
+
+    .left-text-group h2 {
+        font-size: 2.5em;
+    }
+
+    .list-group {
+        width: 700px;
+    }
+
+    .list-group:before {
+        content: url("/images/blob.svg");
+        position: absolute;
+        height: auto;
+        z-index: -1;
+        bottom: 500px;
+        right: -600px;
+        opacity: .1;
+        height: 200px !important;
+    }
+
+    .list-item {
+        width: 50%;
+    }
+
+    /*-- -------------------------- -->
+    <---          PORTFOLIO         -->
+    <--- -------------------------- -*/
+
+    #portfolio .container h2 {
+        font-size: 2.5em;
+        width: 350px;
+        margin-top: ;
+    }
+
+    .example-group {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .example {
+        width: 30%;
+        margin-bottom: 70px !important;
+    }
+
+    .example p {
+        height: 125px;
+    }
+
+    /*-- -------------------------- -->
+    <---            ABOUT           -->
+    <--- -------------------------- -*/
+
+    .who-topper p {
+        width: 600px;
+        margin: auto;
+        margin-bottom: 100px;
+    }
+
+    /*-- -------------------------- -->
+    <---           REVIEWS          -->
+    <--- -------------------------- -*/
+
+    #reviews {
+        height: 650px;
+        background-attachment: fixed;
+    }
+
+    .review-group {
+        margin-top: 180px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .review-group h2 {
+        font-size: 2em;
+        margin-bottom: 40px;
+        width: 100%;
+    }
+
+    .review {
+        width: 45%;
     }
 
 }
