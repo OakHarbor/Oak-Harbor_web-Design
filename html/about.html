@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="format-detection" content="telephone=no">
+
+    <meta property="og:title" content=""/>
+    <meta property="og:description" content=""/>
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content=""/>
+    <meta property="og:image" content=""/>
+    <meta property="og:image:secure_url" content=""/>
+
+    <link rel="canonical" href="">
+
+    <!-- Favicons -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&family=Roboto&display=swap" rel="stylesheet">
+
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/core-styles.css">
+    <link rel="stylesheet" href="/css/about.css">
+
+    <!-- jQuery -->
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <title>Small Business Web Development | Oak Harbor Web Designs</title>
+</head>
+<body>
+
+    <header>
+        <!-- Desktop Navbar -->
+        <div class="mobile-wrapper">
+            <div class="mobile-nav container mobile-nav-container">
+                <img id="mobile-logo" src="/images/Uplft Creative Final Logo.png" alt="mobile_company_logo" height="60"> 
+
+                <!-- Hamburger Menu -->
+                <button aria-label="open the menu" id="menu-button" class="hamburger hamburger--spring" onclick="toggleNav()" type="button">
+                    <span aria-hidden="true" class="hamburger-box">
+                        <span aria-hidden="true" class="hamburger-inner"></span>
+                    </span>
+                </button>
+            </div>
+        </div>
+
+        <!-- ============================================ -->
+        <!--                   NAVIGATION                 -->
+        <!-- ============================================ -->
+
+        <nav>
+            <div class="navbar-menu">
+                <div id="side-menu" class="side-nav">
+                    <img src="/images/company-logo-desktop.png" alt="company logo" width="100px">
+                    <ul id="on-top" class="navbar-links">
+                        <li class="nav-li"><a href="/index.html">Home</a></li>
+                        <li class="nav-li"><a href="/about.html">About</a></li>
+                        <li class="nav-li"><a class="active-menu" href="services.html">Services</a></li>
+                        <li class="nav-li"><a href="portfolio.html">Portfolio</a></li>
+                        <li class="nav-li"><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main">
+
+        <!-- ============================================ -->
+        <!--                   LANDING                    -->
+        <!-- ============================================ -->
+
+        <section id="page-header">
+            <h1>Our Services</h1>
+        </section>
+
+        <!-- ============================================ -->
+        <!--                    ABOUT                     -->
+        <!-- ============================================ -->
+
+        <section id="about">
+            <div class="container">
+                <img src="" alt="">
+                <div class="section-content">
+                    <h2>Giving Small Businessess The Big Business Treatment</h2>
+                    <p>My name is Ryan Postell, I am the owner and sole developer of Oak Harbor Web Designs based in Seattle, WA.  I 
+                    got into programming after my wife had our first child.  I was and still am a stay-at-home dad, 
+                    and I wanted a career that I can do from home and still be there with the kids to watch them grow up. 
+                    So over the course of two years I taught myself how to code websites the right way by hand and just started calling 
+                    small businesses to offer my help.
+                    <br><br>
+                    What I found was that a lot of small businesses don't have the funds to spend thousands of dollars upfront on a new website.
+                    And the ones that did, got taken advantage of and have a terrible website that looks like it was built by someone in a dungeon 
+                    and haven't seen design trends for the last 10 years.  They were in a frustrating spot - they either can't afford a good website, and 
+                    if they can they don't know who to trust to make something great.  So I tweaked my business model to fit their 
+                    needs.  That's how I came up with my $0 down and $150 a month model.  It's more managable for a small business to handle and won't hurt their 
+                    bank accounts.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ============================================ -->
+    <!--                    FOOTER                    -->
+    <!-- ============================================ -->
+
+    <footer class="section container">
+        <div class="flex-group">
+            <div class="dark-mode-group">
+                <div class="light">
+                    <div class="handles">
+                        <div class="handle-circle"></div>
+                        <div class="handle-line"></div>
+                        <div class="handle-end"></div>
+                    </div>
+                    <div class="wire"></div>
+                    <div class="triangle"></div>
+                    <div class="bulb"></div>
+                </div>
+                <!--SVG Light-->
+                <div class="dark-toggle">
+                    <span></span>
+                </div>
+                <p>SWITCH TO DARK MODE</p>
+            </div>
+            <div class="footer-item image-box">
+                <img src="/images/Uplft Creative Final Logo.png" alt="" height="50">
+                <p>Seattle, WA</p>
+                <p>OHWDinfo@gmail.com</p>
+                <a href="">(219) 576-2539</a>
+            </div>
+            <div class="footer-item">
+                <h2>Navigation</h2>
+                <a class="link" href="/index.html">Home</a>
+                <a class="link" href="about.html">About</a>
+                <a class="link-long" href="services.html">Services</a>
+                <a class="link-long" href="/index.html#portfolio">Portfolio</a>
+                <a class="link-long" href="contact.html">Contact</a>
+            </div>
+            <div class="footer-item">
+                <h2>Services</h2>
+                <p>Web Design</p>
+                <p>Website Maintenance</p>
+                <p>SEO Services</p>
+                <p>Content Creation</p>
+                <p>Logo Design</p>
+            </div>
+        </div>
+        <div class="branding">
+            <p>Copyright &copy; 2020 | Oak Harbor Web Designs | All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <script defer src="/app.js"></script>
+</body>
+</html>
