@@ -50,7 +50,6 @@
 
 .quote-button {
     border: none;
-    border-radius: 25px;
     position: relative;
     background: #fff;
     color: #404040;
@@ -68,8 +67,9 @@
 
 .mock-up {
     position: absolute;
-    bottom: -125px;
+    bottom: -200px;
     width: 80%;
+    right: 0;
     z-index: 10;
     margin: auto;
 }
@@ -330,12 +330,11 @@
     margin-bottom: 70px;
     position: relative;
     padding: 50px 25px;
-        background: #fff;
-        border-radius: 5px;
-        -webkit-box-shadow: 0px 0px 25px 15px rgba(0,0,0,0.1);
-        -moz-box-shadow: 0px 0px 25px 15px rgba(0,0,0,0.1);
-        box-shadow: 0px 0px 25px 15px rgba(0,0,0,0.1);
-        border-bottom: 5px solid var(--primary);
+    background: #fff;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 0px 25px 15px rgba(0,0,0,0.1);
+    box-shadow: 0px 0px 25px 15px rgba(0,0,0,0.1);
+    border-bottom: 5px solid var(--primary);
 }
 
 .example:last-child {
@@ -489,71 +488,108 @@
 }
 
 /*-- -------------------------- -->
-<---        TESTIMONIALS        -->
+<---          PRICING           -->
 <--- -------------------------- -*/
 
-#reviews {
+#pricing {
+    margin-top: 50px;
+}
+
+.price-box {
+    border: 2px solid #e6f2ff;
+    border-radius: 6px;
+    padding: 70px 30px 30px 30px;
     position: relative;
-    background: url("/images/review-background.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    padding-top: 80px;
-}
-
-#reviews:before {
-    content: '';
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    background: rgb(32,23,255);
-    background: -o-linear-gradient(305deg, rgba(32,23,255,1) 0%, rgba(67,183,255,0.9150035014005602) 96%);
-    background: linear-gradient(145deg, rgba(32,23,255,1) 0%, rgba(67,183,255,0.9150035014005602) 96%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2017ff",endColorstr="#43b7ff",GradientType=1);
-}
-
-#reviews img {
-    position: absolute;
-    z-index: 10;
-    width: 100%;
-    -webkit-transform: scale(-1);
-        -ms-transform: scale(-1);
-            transform: scale(-1);
-    top: -2px;
-}
-
-.review-group h2 {
-    color: #fff;
-    margin-bottom: 25px;
-}
-
-.review {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    max-width: 400px;
+    margin: auto;
     margin-bottom: 50px;
 }
 
-.review:last-child {
-    margin-bottom: 0;
+.price-box h2 {
+    position: absolute;
+    text-align: center;
+    background: #f1f8ff;
+    width: 100%;
+    top: 0;
+    height: 50px;
+    line-height: 50px;
+    font-size: 14px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #e6f2ff;
 }
 
-.review p:first-child {
-    background: #fff;
-    padding: 20px;
-    color: #838383;
-    border-radius: 5px;
+.price-box h3 {
+    position: relative;
+    color: var(--primary);
+    font-size: 4em;
+    font-weight: normal;
+    -webkit-transform: translateX(-10px);
+        -ms-transform: translateX(-10px);
+            transform: translateX(-10px);
+}
+
+.price-box h3:before {
+    content: '$';
+    position: absolute;
+    top: -10px;
+    left: -35px;
+    font-size: 1em;
+    -webkit-transform: scale(.5);
+        -ms-transform: scale(.5);
+            transform: scale(.5);
+    height: auto;
+}
+
+.price-box h3:after {
+    content: '/MO';
+    position: absolute;
+    right: -86px;
+    bottom: -15px;
+    -webkit-transform: scale(.3);
+        -ms-transform: scale(.3);
+            transform: scale(.3);
+}
+
+.price-box ul li {
+    list-style: none;
     margin-bottom: 15px;
 }
 
-.review p:nth-child(2) {
-    color: #fff;
-    font-size: 1.2em;
-    font-weight: bold;
+.price-box ul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
 }
 
-.review p:nth-child(3) {
-    color: #fff;
-    font-size: 1em;
+.price-box ul li img {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    left: -30px;
+}
+
+.price-box:nth-child(3) h3 {
+    -webkit-transform: translateX(0px);
+        -ms-transform: translateX(0px);
+            transform: translateX(0px);
+}
+
+.price-box:nth-child(3) h3:after {
+    display: none;
 }
 
 @media screen and (min-width: 350px) and (max-width: 420px) {
@@ -564,6 +600,11 @@
 
     #landing .container {
         margin-top: 100px;
+    }
+
+    .mock-up {
+        bottom: -280px;
+        width: 90%;
     }
 
 }
@@ -607,6 +648,7 @@
     .mock-up {
         width: 600px;
         right: 0;
+        bottom: -400px;
     }
 
     /*-- -------------------------- -->
@@ -677,10 +719,18 @@
     }
 
     .example-group {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
     }
 
     .example {
@@ -726,28 +776,6 @@
         margin-bottom: 80px;
     }
 
-    /*-- -------------------------- -->
-    <---          REVIEWS           -->
-    <--- -------------------------- -*/
-
-    .review-group {
-        margin-top: 100px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        flex-wrap: wrap;
-    }
-
-    .review-group h2 {
-        font-size: 2em;
-        margin-bottom: 40px;
-        width: 100%;
-    }
-
-    .review {
-        width: 45%;
-    }
-
 }
 
 @media screen and (min-width: 1026px) {
@@ -764,6 +792,7 @@
     #landing .container {
         width: 100%;
         margin-top: 150px;
+        position: relative;
     }
 
     #landing h1 {
@@ -776,9 +805,10 @@
     }
 
     .mock-up {
+        position: absolute;
         width: 700px;
-        right: 300px;
-        bottom: 70px;
+        right: 0px;
+        bottom: -270px;
     }
 
     .swoop {
@@ -807,8 +837,12 @@
     .content {
         display: inline-block;
         width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: space-between;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
         margin-top: 0;
     }
     
@@ -840,7 +874,10 @@
     .piggy-bank {
         display: inline-block;
         width: 500px;
-        transform: translateY(100px);
+        height: 400px;
+        -webkit-transform: translateY(100px);
+            -ms-transform: translateY(100px);
+                transform: translateY(100px);
     }
 
     .left {
@@ -878,12 +915,15 @@
     #portfolio .container h2 {
         font-size: 2.5em;
         width: 350px;
-        margin-top: ;
     }
 
     .example-group {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: space-between;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
     }
 
     .example {
@@ -906,30 +946,51 @@
     }
 
     /*-- -------------------------- -->
-    <---           REVIEWS          -->
+    <---           PRICING          -->
     <--- -------------------------- -*/
 
-    #reviews {
-        height: 650px;
-        background-attachment: fixed;
+    #pricing {
+        margin-bottom: 100px;
     }
 
-    .review-group {
-        margin-top: 180px;
+    #pricing .container {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
     }
 
-    .review-group h2 {
-        font-size: 2em;
-        margin-bottom: 40px;
-        width: 100%;
+    .price-box {
+        margin: 0;
     }
 
-    .review {
-        width: 45%;
+    .price-box:nth-child(2) {
+        -webkit-transform: scale(1.2);
+            -ms-transform: scale(1.2);
+                transform: scale(1.2);
+        margin: 0 25px;
+        -webkit-box-shadow: 0px 0px 25px -10px rgba(67,183,255,1);
+        box-shadow: 0px 0px 25px -10px rgba(67,183,255,1);
+        background: #fff;
+    }
+
+    .price-box:nth-child(2) h2 {
+        background: #a7ffa4;
+    }
+
+    .price-box:nth-child(2) button {
+        background: -webkit-gradient(linear, left top, right top, from(rgba(67,183,255,1)), to(rgba(0,221,246,1)));
+        background: -o-linear-gradient(left, rgba(67,183,255,1) 0%, rgba(0,221,246,1) 100%);
+        background: linear-gradient(90deg, rgba(67,183,255,1) 0%, rgba(0,221,246,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#43b7ff",endColorstr="#00ddf6",GradientType=1);
+    }
+
+    .price-box:nth-child(3) h2 {
+        background: #ffd0b5;
     }
 
 }

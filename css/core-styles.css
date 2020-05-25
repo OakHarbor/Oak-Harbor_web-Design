@@ -23,8 +23,8 @@ button:hover {
 }
 
 .section {
-    padding-top: 35px;
-    padding-bottom: 35px;
+    padding-top: 35px !important;
+    padding-bottom: 35px !important;
 }
 
 html {
@@ -42,16 +42,21 @@ p {
 	line-height: 1.6em;
 }
 
-p, a, li {
+p, a, li, span {
 	font-family: 'Poppins', sans-serif;
-	color: #121212;
+	color: #646464;
     margin: 0;
     font-weight: 300;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h2 span, h3, h4, h5, h6 {
 	font-family: 'Poppins', sans-serif;
-	margin: 0;
+    margin: 0;
+    color: #1d2124;
+}
+
+h2 span {
+    font-weight: bold;
 }
 
 .container {
@@ -419,8 +424,56 @@ h1, h2, h3, h4, h5, h6 {
     height: auto;
 }
 
+/* Page Header */
+#page-header {
+    height: 300px;
+    background: url("/images/coding-screen.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+}
+
+#page-header:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgb(0,48,107);
+    background: -o-linear-gradient(left, rgba(0,48,107,1) 0%, rgba(0,122,213,0.927608543417367) 100%);
+    background: -webkit-gradient(linear, left top, right top, from(rgba(0,48,107,1)), to(rgba(0,122,213,0.927608543417367)));
+    background: linear-gradient(90deg, rgba(0,48,107,1) 0%, rgba(0,122,213,0.927608543417367) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00306b",endColorstr="#007ad5",GradientType=1);
+}
+
+#page-header h1 {
+    color: #fff;
+    font-size: 36px;
+    position: relative;
+    z-index: 2;
+}
+
 /* Tablets */
-@media screen and (min-width: 500px) and (max-width: 1024px) {
+@media screen and (min-width: 500px) and (max-width: 1025px) {
+
+    .container {
+        max-width: 700px;
+    }
+
+    .mobile-nav {
+        max-width: 100%;
+    }
 
     #bottom .container {
         width: 500px;
@@ -610,6 +663,14 @@ h1, h2, h3, h4, h5, h6 {
     #bottom h2 {
         font-size: 2.5em;
     }
+
+    #page-header {
+        background-attachment: fixed;
+    }
+
+    #page-header h1 {
+        margin-top: 50px;
+    }
     
     @media screen and (min-width: 1025px) and (max-width: 1456px) {
 
@@ -665,10 +726,44 @@ footer {
     position: relative;
 }
 
+.handles {
+    width: auto;
+    position: absolute;
+    top: 0;
+    left: 19px;
+}
+
+.handle-circle {
+    background: var(--primary);
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.handle-line {
+    width: 50px;
+    height: 5px;
+    background: var(--primary);
+    position: absolute;
+    top: 5px;
+}
+
+.handle-end {
+    position: absolute;
+    background: var(--primary);
+    height: 20px;
+    width: 200px;
+    border-radius: 10px 0 0 10px;
+    top: -2px;
+    right: -250px;
+}
+
 .light {
     height: auto;
     width: auto;
     position: relative;
+    top: 0px;
 }
 
 .wire {
@@ -702,7 +797,7 @@ footer {
 
 .dark-mode-group {
     position: absolute;
-    top: 0px;
+    top: 50px;
     right: 15px;
     width: 80px;
     height: 200px;
@@ -773,7 +868,7 @@ footer {
 
 footer img {
     margin-bottom: 70px;
-    margin-top: 50px;
+    margin-top: 0px;
 }
 
 .footer-item {
@@ -787,6 +882,19 @@ footer img {
 
 .footer-item h2 {
     margin-bottom: 30px;
+}
+
+.footer-item a {
+    display: block;
+    text-decoration: none;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+
+
+.footer-item a:hover {
+    cursor: pointer;
 }
 
 .branding {
@@ -808,15 +916,108 @@ footer img {
     margin-bottom: 30px;
 }
 
+/* Tablets */
+@media screen and (min-width: 500px) and (max-width: 1025spx) {
+
+    .handle-line {
+        width: 80px;
+    }
+
+    .handle-end {
+        right: -100px;
+    }
+
+}
+
 @media screen and (min-width: 1026px) {
+
+    .flex-group {
+        width: 1100px;
+        margin: auto;
+    }
 
     footer img {
         margin-top: 0;
         margin-bottom: 56px;
     }
 
+    .link:before {
+        content: '';
+        position: absolute;
+        height: 2px;
+        width: 0px;
+        bottom: -5px;
+        background: var(--primary);
+        -webkit-transition: .2s ease-in-out;
+        -o-transition: .2s ease-in-out;
+        transition: .2s ease-in-out;
+    }
+    
+    .link:hover.link:before {
+        width: 50px;
+        -webkit-transition: .2s ease-in-out;
+        -o-transition: .2s ease-in-out;
+        transition: .2s ease-in-out;
+    }
+    
+    .link-long:before {
+        content: '';
+        position: absolute;
+        height: 2px;
+        width: 0px;
+        bottom: -5px;
+        background: var(--primary);
+        -webkit-transition: .2s ease-in-out;
+        -o-transition: .2s ease-in-out;
+        transition: .2s ease-in-out;
+    }
+    
+    .link-long:hover.link-long:before {
+        width: 67px;
+        -webkit-transition: .2s ease-in-out;
+        -o-transition: .2s ease-in-out;
+        transition: .2s ease-in-out;
+    }
+
     .dark-mode-group {
         position: relative;
+        right: -32px;
+    }
+
+    .handles {
+        -webkit-transform: scaleX(-1);
+            -ms-transform: scaleX(-1);
+                transform: scaleX(-1);
+        left: 14px;
+    }
+
+    .handle-line {
+        width: 60px;
+    }
+
+    .handle-end {
+        width: 20px;
+        right: -60px;
+        position: relative;
+    }
+
+    .handle-end:before {
+        content: '';
+        position: absolute;
+        width: 1px;
+        height: 332px;
+        background: var(--primary);
+        left: 20px;
+    }
+
+    .handle-end:after {
+        content: '';
+        position: absolute;
+        width: 70px;
+        height: 1px;
+        background: var(--primary);
+        left: -50px;
+        bottom: -312px;
     }
 
     .flex-group {
@@ -841,6 +1042,10 @@ footer img {
 
     .footer-item {
         margin-top: 100px;
+    }
+
+    .footer-item:last-child p {
+        width: 180px;
     }
 
     .footer-item h2 {
