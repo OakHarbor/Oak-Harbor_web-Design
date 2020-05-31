@@ -65,6 +65,12 @@
             justify-content: space-between;
 }
 
+.quote-button:hover {
+    border: none;
+    background: rgba(255, 255, 255, .8);
+    color: #000;
+}
+
 .mock-up {
     position: absolute;
     bottom: -200px;
@@ -361,8 +367,25 @@
 }
 
 .portfolio-button {
-    background: #000000;
+    -webkit-transition: .3s ease;
+    -o-transition: .3s ease;
+    transition: .3s ease;
+    border: 1px solid rgb(67,183,255) !important;
+    background: #fff;
+    color: rgb(67,183,255);
+}
+
+.portfolio-button:hover {
+    -webkit-transition: .3s ease;
+    -o-transition: .3s ease;
+    transition: .3s ease;
     color: #fff;
+    border: none;
+    background: rgb(67,183,255);
+    background: -o-linear-gradient(left, rgba(67,183,255,1) 0%, rgba(0,221,246,1) 100%);
+    background: -webkit-gradient(linear, left top, right top, from(rgba(67,183,255,1)), to(rgba(0,221,246,1)));
+    background: linear-gradient(90deg, rgba(67,183,255,1) 0%, rgba(0,221,246,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#43b7ff",endColorstr="#00ddf6",GradientType=1);
 }
 
 /*-- -------------------------- -->
@@ -864,17 +887,23 @@
     <--- -------------------------- -*/
 
     #pricing {
-        height: auto;
+        overflow: visible;
     }
 
     #pricing .container {
-        max-width: 1200px;
+        max-width: 1300px;
+        z-index: 100;
+    }
+
+    .price-box {
+        background: #fff;
     }
 
     .piggy-bank {
         display: inline-block;
+        margin-right: 70px;
         width: 500px;
-        height: 400px;
+        height: 350px;
         -webkit-transform: translateY(100px);
             -ms-transform: translateY(100px);
                 transform: translateY(100px);
@@ -949,11 +978,13 @@
     <---           PRICING          -->
     <--- -------------------------- -*/
 
-    #pricing {
+    #prices {
         margin-bottom: 100px;
+        height: 100px;
     }
 
-    #pricing .container {
+    #prices .container {
+        z-index: 100;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -976,21 +1007,29 @@
         -webkit-box-shadow: 0px 0px 25px -10px rgba(67,183,255,1);
         box-shadow: 0px 0px 25px -10px rgba(67,183,255,1);
         background: #fff;
+        z-index: 100;
     }
 
     .price-box:nth-child(2) h2 {
         background: #a7ffa4;
     }
 
-    .price-box:nth-child(2) button {
-        background: -webkit-gradient(linear, left top, right top, from(rgba(67,183,255,1)), to(rgba(0,221,246,1)));
+    .price-box button {
+        -webkit-transition: .3s ease;
+        -o-transition: .3s ease;
+        transition: .3s ease;
+        background: rgb(67,183,255);
         background: -o-linear-gradient(left, rgba(67,183,255,1) 0%, rgba(0,221,246,1) 100%);
+        background: -webkit-gradient(linear, left top, right top, from(rgba(67,183,255,1)), to(rgba(0,221,246,1)));
         background: linear-gradient(90deg, rgba(67,183,255,1) 0%, rgba(0,221,246,1) 100%);
         filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#43b7ff",endColorstr="#00ddf6",GradientType=1);
     }
 
-    .price-box:nth-child(3) h2 {
-        background: #ffd0b5;
+    .price-box button:hover {
+        border: 1px solid var(--primary);
+        -webkit-transition: .3s ease;
+        -o-transition: .3s ease;
+        transition: .3s ease;
+        background: #fff;
     }
-
 }

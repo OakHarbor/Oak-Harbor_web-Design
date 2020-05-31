@@ -724,6 +724,18 @@ h2 span {
 
 footer {
     position: relative;
+    height: auto;
+    padding-top: 150px;
+    background: rgb(0,16,153);
+    background: -o-linear-gradient(305deg, rgba(0,16,153,1) 0%, rgba(58,217,255,1) 96%);
+    background: linear-gradient(145deg, rgba(0,16,153,1) 0%, rgba(58,217,255,1) 96%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#001099",endColorstr="#3ad9ff",GradientType=1);
+}
+
+.footer-img {
+    position: absolute;
+    width: 100%;
+    top: -2px;
 }
 
 .handles {
@@ -734,7 +746,7 @@ footer {
 }
 
 .handle-circle {
-    background: var(--primary);
+    background: #fff;
     height: 15px;
     width: 15px;
     border-radius: 50%;
@@ -744,14 +756,14 @@ footer {
 .handle-line {
     width: 50px;
     height: 5px;
-    background: var(--primary);
+    background: #fff;
     position: absolute;
     top: 5px;
 }
 
 .handle-end {
     position: absolute;
-    background: var(--primary);
+    background: #fff;
     height: 20px;
     width: 200px;
     border-radius: 10px 0 0 10px;
@@ -764,19 +776,23 @@ footer {
     width: auto;
     position: relative;
     top: 0px;
+    z-index: 10;
 }
 
 .wire {
-    height: 80px;
+    height: 130px;
     width: 5px;
-    background: var(--primary);
+    -webkit-transform: translateY(50x);
+        -ms-transform: translateY(50x);
+            transform: translateY(50x);
+    background: #fff;
     margin: auto;
 }
 
 .triangle {
     border-left: 26px solid transparent;
     border-right: 26px solid transparent;
-    border-bottom: 26px solid var(--primary);
+    border-bottom: 26px solid #fff;
     -webkit-transform: translateY(-15px);
         -ms-transform: translateY(-15px);
             transform: translateY(-15px);
@@ -797,10 +813,10 @@ footer {
 
 .dark-mode-group {
     position: absolute;
-    top: 50px;
+    top: -130px;
     right: 15px;
     width: 80px;
-    height: 200px;
+    height: 250px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -819,6 +835,7 @@ footer {
 .dark-mode-group p {
     font-size: .7em;
     text-align: center;
+    color: #fff;
 }
 
 .dark-toggle {
@@ -828,7 +845,7 @@ footer {
     z-index: 20;
     border-radius: 10px;
     background: transparent;
-    border: 3px solid #000;
+    border: 3px solid #fff;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -859,7 +876,7 @@ footer {
     width: 10px;
     left: 3px;
     border-radius: 50%;
-    background: #000;
+    background: #fff;
     position: absolute;
     -webkit-transition: .3s ease;
     -o-transition: .3s ease;
@@ -867,8 +884,17 @@ footer {
 }
 
 footer img {
-    margin-bottom: 70px;
+    margin-bottom: 30px;
     margin-top: 0px;
+}
+
+.footer-line {
+    height: 1px;
+    width: 200px;
+    background: var(--primary);
+    opacity: .9;
+    margin-top: 20px;
+    margin-bottom: 30px;
 }
 
 .footer-item {
@@ -878,10 +904,12 @@ footer img {
 .footer-item p {
     width: 230px;
     margin-bottom: 10px;
+    color: #fff;
 }
 
 .footer-item h2 {
-    margin-bottom: 30px;
+    margin-bottom: 0px;
+    color: #fff;
 }
 
 .footer-item a {
@@ -889,6 +917,7 @@ footer img {
     text-decoration: none;
     margin-bottom: 10px;
     position: relative;
+    color: #fff;
 }
 
 
@@ -898,6 +927,7 @@ footer img {
 }
 
 .branding {
+    background: rgba(0, 0, 0, .15);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -905,6 +935,9 @@ footer img {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .branding p {
@@ -914,10 +947,12 @@ footer img {
     text-align: center;
     font-size: .7em;
     margin-bottom: 30px;
+    margin-top: 30px;
+    color: #fff;
 }
 
 /* Tablets */
-@media screen and (min-width: 500px) and (max-width: 1025spx) {
+@media screen and (min-width: 500px) and (max-width: 1025px) {
 
     .handle-line {
         width: 80px;
@@ -927,9 +962,31 @@ footer img {
         right: -100px;
     }
 
+    footer {
+        padding-top: 300px;
+    }
+
+    .wire {
+        height: 300px;
+    }
+
+    .dark-mode-group {
+        height: 430px;
+        top: -310px;
+    }
+
 }
 
 @media screen and (min-width: 1026px) {
+
+    footer {
+        padding-top: 550px !important;
+    }
+
+    .footer-img {
+        top: -100px;
+        width: 110%;
+    }
 
     .flex-group {
         width: 1100px;
@@ -982,6 +1039,7 @@ footer img {
     .dark-mode-group {
         position: relative;
         right: -32px;
+        top: -70px;
     }
 
     .handles {
@@ -1049,7 +1107,7 @@ footer img {
     }
 
     .footer-item h2 {
-        margin-bottom: 50px;
+        margin-bottom: 0px;
     }
 
     .image-box {
