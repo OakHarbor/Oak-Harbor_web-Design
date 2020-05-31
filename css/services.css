@@ -463,6 +463,10 @@
     <---           PRICING          -->
     <--- -------------------------- -*/
 
+    #pricing {
+        height: 100px;
+    }
+
     #pricing .container {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -472,10 +476,12 @@
         -webkit-box-pack: center;
             -ms-flex-pack: center;
                 justify-content: center;
+        z-index: 100;
     }
 
     .price-box {
         margin: 0;
+        background: #fff;
     }
 
     .price-box:nth-child(2) {
