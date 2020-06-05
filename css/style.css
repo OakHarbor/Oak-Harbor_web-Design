@@ -111,33 +111,13 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     margin-top: 50px;
 }
 
 .what-we-do-topper h2 span {
     color: var(--primary);
     margin-right: 10px;
-}
-
-.what-we-do-topper h2:before {
-    position: absolute;
-    content: '';
-    height: 3px;
-    width: 10px;
-    left: -10px;
-    background: var(--primary);
-    z-index: -1;
-}
-
-.what-we-do-topper h2:after {
-    position: absolute;
-    content: '';
-    height: 3px;
-    width: 10px;
-    right: -10px;
-    background: var(--primary);
-    z-index: -1;
 }
 
 .what-we-do-topper h3 {
@@ -304,32 +284,12 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin-bottom: 60px;
+    margin-bottom: 10px;
 }
 
 #portfolio h2 span {
     color: var(--primary);
     margin-right: 4px;
-}
-
-#portfolio h2:before {
-    position: absolute;
-    content: '';
-    height: 3px;
-    width: 10px;
-    left: -10px;
-    background: var(--primary);
-    z-index: -1;
-}
-
-#portfolio h2:after {
-    position: absolute;
-    content: '';
-    height: 3px;
-    width: 10px;
-    right: -10px;
-    background: var(--primary);
-    z-index: -1;
 }
 
 .example {
@@ -358,6 +318,7 @@
 
 #portfolio h4 {
     color: #999;
+    opacity: .8;
     margin-bottom: 15px;
     font-weight: normal;
 }
@@ -414,7 +375,7 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 .who-topper h2 span {
@@ -422,24 +383,23 @@
     margin-right: 4px;
 }
 
-.who-topper h2:before {
-    position: absolute;
-    content: '';
-    height: 3px;
-    width: 10px;
-    left: -10px;
-    background: var(--primary);
-    z-index: -1;
+.graphic-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 180px;
+    margin: auto;
+    margin-bottom: 30px;
 }
 
-.who-topper h2:after {
-    position: absolute;
-    content: '';
-    height: 3px;
-    width: 10px;
-    right: -10px;
-    background: var(--primary);
-    z-index: -1;
+.dash {
+    width: 50px;
+    border-bottom: 1px dashed rgba(67,183,255, .3);
+}
+
+.graphic-group img {
+    width: 30px !important;
+    margin-bottom: 0 !important;
 }
 
 .who-topper h3 {
@@ -613,6 +573,14 @@
 
 .price-box:nth-child(3) h3:after {
     display: none;
+}
+
+.price-box button {
+    background: rgb(67,183,255);
+        background: -o-linear-gradient(left, rgba(67,183,255,1) 0%, rgba(0,221,246,1) 100%);
+        background: -webkit-gradient(linear, left top, right top, from(rgba(67,183,255,1)), to(rgba(0,221,246,1)));
+        background: linear-gradient(90deg, rgba(67,183,255,1) 0%, rgba(0,221,246,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#43b7ff",endColorstr="#00ddf6",GradientType=1);
 }
 
 @media screen and (min-width: 350px) and (max-width: 420px) {
@@ -947,6 +915,7 @@
     }
 
     .example-group {
+        margin-top: 70px;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -961,12 +930,17 @@
     }
 
     .example p {
-        height: 125px;
+        height: 145px;
     }
 
     /*-- -------------------------- -->
     <---            ABOUT           -->
     <--- -------------------------- -*/
+
+    .who-topper h2 {
+        font-size: 40px;
+        width: auto;
+    }
 
     .who-topper p {
         width: 600px;
