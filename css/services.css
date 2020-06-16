@@ -288,6 +288,10 @@
         width: 300px;
     }
 
+    .template img {
+        margin-bottom: 50px;
+    }
+
 }
 
 /* Desktop */
@@ -404,6 +408,14 @@
             -ms-transform: scaleX(-1);
                 transform: scaleX(-1);
         margin-top: 100px;
+    }
+
+    /*-- -------------------------- -->
+    <---       GRAPHIC DESIGN       -->
+    <--- -------------------------- -*/
+
+    #graphic-design h2 {
+        width: 430px;
     }
 
     /*-- -------------------------- -->
