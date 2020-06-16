@@ -56,18 +56,19 @@
     padding-left: 35px;
 }
 
+.checkmark img {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: -30px
+}
+
 .checkmark li {
     position: relative;
     list-style: none;
     margin-bottom: 25px;
-}
-
-.checkmark li:before {
-    position: absolute;
-    z-index: 1;
-    content: url("/images/check-2.svg");
-    left: -35px;
-    top: 4px;
+    display: flex;
+    align-items: center;
 }
 
 /*-- -------------------------- -->
