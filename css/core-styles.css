@@ -782,7 +782,7 @@ footer {
 }
 
 .wire {
-    height: 130px;
+    height: 330px;
     width: 5px;
     -webkit-transform: translateY(50x);
         -ms-transform: translateY(50x);
@@ -815,10 +815,10 @@ footer {
 
 .dark-mode-group {
     position: absolute;
-    top: -140px;
+    top: -340px;
     right: 15px;
     width: 80px;
-    height: 250px;
+    height: 450px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1042,7 +1042,7 @@ footer img {
     .dark-mode-group {
         position: relative;
         right: -32px;
-        top: -70px;
+        top: -270px;
     }
 
     .handles {
