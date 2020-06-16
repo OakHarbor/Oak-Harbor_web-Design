@@ -43,3 +43,42 @@ let toggleNav = function () {
         toggleNavStatus = false;
     }
 }
+
+
+// ------------------------------------------------- DARK MODE -----------------------------
+
+/* Navigation Bar and Body */
+var $body = $("body");
+
+// Dark Mode Action
+let darkMode = localStorage.getItem("darkMode");
+const darkModeToggle = document.querySelector('#dark-mode');
+
+const enableDarkMode = () => {
+
+  /* Navigation */
+  
+
+  localStorage.setItem("darkMode", "enabled")
+}
+
+const disableDarkMode = () => {
+
+  /* Navigation */
+  
+
+  localStorage.setItem("darkMode", null)
+}
+
+if (darkMode == "enabled") {
+  enableDarkMode();
+}
+
+darkModeToggle.addEventListener('click', () => {
+  darkMode = localStorage.getItem("darkMode");
+  if (darkMode !== "enabled") {
+    enableDarkMode();
+  } else {
+    disableDarkMode();
+  }
+})

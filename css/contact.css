@@ -377,6 +377,10 @@ form p{
 
 @media screen and (min-width: 1026px) {
 
+    #contact {
+        max-width: 500px;
+    }
+
     .container {
         max-width: 1100px;
     }
@@ -396,11 +400,15 @@ form p{
         -webkit-box-pack: justify;
             -ms-flex-pack: justify;
                 justify-content: space-between;
-        width: 900px;
+        width: 1000px;
         margin: 100px auto 100px auto;
         padding-top: 100px;
         height: 300px;
         overflow: visible;
+    }
+
+    #contact textarea {
+        height: 200px;
     }
 
     .quote {

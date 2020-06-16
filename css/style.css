@@ -328,12 +328,15 @@
 }
 
 .portfolio-button {
+    color: #fff;
     -webkit-transition: .3s ease;
     -o-transition: .3s ease;
     transition: .3s ease;
-    border: 1px solid rgb(67,183,255) !important;
-    background: #fff;
-    color: rgb(67,183,255);
+    background: rgb(67,183,255);
+        background: -o-linear-gradient(left, rgba(67,183,255,1) 0%, rgba(0,221,246,1) 100%);
+        background: -webkit-gradient(linear, left top, right top, from(rgba(67,183,255,1)), to(rgba(0,221,246,1)));
+        background: linear-gradient(90deg, rgba(67,183,255,1) 0%, rgba(0,221,246,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#43b7ff",endColorstr="#00ddf6",GradientType=1);
 }
 
 .portfolio-button:hover {
