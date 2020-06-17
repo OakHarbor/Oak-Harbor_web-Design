@@ -387,17 +387,23 @@
 }
 
 .graphic-group {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 180px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 160px;
     margin: auto;
     margin-bottom: 30px;
 }
 
 .dash {
     width: 50px;
-    border-bottom: 1px dashed rgba(67,183,255, .3);
+    border-bottom: 1px dashed rgba(67,183,255, .9);
 }
 
 .graphic-group img {
@@ -576,14 +582,6 @@
 
 .price-box:nth-child(3) h3:after {
     display: none;
-}
-
-.price-box button {
-    background: rgb(67,183,255);
-        background: -o-linear-gradient(left, rgba(67,183,255,1) 0%, rgba(0,221,246,1) 100%);
-        background: -webkit-gradient(linear, left top, right top, from(rgba(67,183,255,1)), to(rgba(0,221,246,1)));
-        background: linear-gradient(90deg, rgba(67,183,255,1) 0%, rgba(0,221,246,1) 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#43b7ff",endColorstr="#00ddf6",GradientType=1);
 }
 
 @media screen and (min-width: 350px) and (max-width: 420px) {
@@ -917,6 +915,10 @@
         width: 350px;
     }
 
+    #portfolio h2 span {
+        margin-right: 15px;
+    }
+
     .example-group {
         margin-top: 70px;
         display: -webkit-box;
@@ -989,24 +991,5 @@
 
     .price-box:nth-child(2) h2 {
         background: #a7ffa4;
-    }
-
-    .price-box button {
-        -webkit-transition: .3s ease;
-        -o-transition: .3s ease;
-        transition: .3s ease;
-        background: rgb(67,183,255);
-        background: -o-linear-gradient(left, rgba(67,183,255,1) 0%, rgba(0,221,246,1) 100%);
-        background: -webkit-gradient(linear, left top, right top, from(rgba(67,183,255,1)), to(rgba(0,221,246,1)));
-        background: linear-gradient(90deg, rgba(67,183,255,1) 0%, rgba(0,221,246,1) 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#43b7ff",endColorstr="#00ddf6",GradientType=1);
-    }
-
-    .price-box button:hover {
-        border: 1px solid var(--primary);
-        -webkit-transition: .3s ease;
-        -o-transition: .3s ease;
-        transition: .3s ease;
-        background: #fff;
     }
 }
