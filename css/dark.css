@@ -5,11 +5,13 @@
     --medium: #1b1b1b;
     --light: #2e2e2e;
 }
-
-header {
-    max-width: 1100px;
-    position: relative;
-    margin: auto;
+ 
+.top-dark-mode-button {
+    position: absolute;
+    top: 60px;
+    right: 15px;
+    transform: rotate(-90deg);
+    z-index: 1000;
 }
 
 .top-dark-mode-button .dark-toggle {
@@ -424,8 +426,16 @@ footer.dark-mode {
         margin: auto;
     }
 
+    .mobile-dark {
+        display: none !important;
+    }
+
     .navbar-menu.dark-mode {
         height: 124px;
+    }
+
+    .navbar-menu.dark-mode {
+        overflow: visible;
     }
     
     .top-dark-mode-button {
@@ -435,7 +445,7 @@ footer.dark-mode {
         -webkit-transform: rotate(-90deg);
             -ms-transform: rotate(-90deg);
                 transform: rotate(-90deg);
-        z-index: 1000;
+        z-index: 5000;
     }
 
     .navbar-menu.dark-mode {
