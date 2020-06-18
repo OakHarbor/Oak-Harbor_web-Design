@@ -67,8 +67,12 @@
     position: relative;
     list-style: none;
     margin-bottom: 25px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 /*-- -------------------------- -->
@@ -171,6 +175,12 @@
     max-width: 400px;
     margin: auto;
     margin-bottom: 50px;
+    z-index: 100;
+}
+
+.price-box:nth-child(2) {
+    position: relative;
+    z-index: 1000;
 }
 
 .price-box h2 {
@@ -441,6 +451,7 @@
         width: 650px;
         position: relative;
         z-index: 100;
+        overflow: visible;
     }
 
     .boxes-container:after {
@@ -521,7 +532,7 @@
         box-shadow: 0px 0px 25px -10px rgba(67,183,255,1);
         background: #fff;
         position: relative;
-        z-index: 10;
+        z-index: 1000;
     }
 
     .price-box:nth-child(2) h2 {

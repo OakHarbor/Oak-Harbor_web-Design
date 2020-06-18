@@ -987,7 +987,7 @@
         -webkit-box-shadow: 0px 0px 25px -10px rgba(67,183,255,1);
         box-shadow: 0px 0px 25px -10px rgba(67,183,255,1);
         background: #fff;
-        z-index: 100;
+        z-index: 1000;
     }
 
     .price-box:nth-child(2) h2 {

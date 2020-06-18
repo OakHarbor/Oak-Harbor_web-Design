@@ -112,7 +112,8 @@
     <!-- ============================================ -->
 
     <footer>
-        <img aria-hidden="true" class="footer-img" src="/images/footer-swoosh.svg" alt="">
+        <img aria-hidden="true" class="footer-img light-mode-svg" src="/images/footer-swoosh.svg" alt="">
+        <img aria-hidden="true" class="footer-img dark-mode-svg" src="/images/footer-swoosh-dark.svg" alt="">
         <div class="container">
             <div class="flex-group">
                 <div class="dark-mode-group">
@@ -122,9 +123,11 @@
                         <div class="bulb"></div>
                     </div>
                     <!--SVG Light-->
-                    <div class="dark-toggle">
-                        <span></span>
-                    </div>
+                    <button class="dark-mode-button" aria-label="dark mode toggle">
+                        <span aria-hidden="true" class="dark-toggle">
+                            <span class="DTspan"></span>
+                        </span>
+                    </button>
                     <p>SWITCH TO DARK MODE</p>
                 </div>
                 <div class="footer-item image-box">
@@ -136,11 +139,11 @@
                 <div class="footer-item">
                     <h2>Navigation</h2>
                     <div aria-hidden="true" class="footer-line"></div>
-                    <a class="link" href="">Home</a>
-                    <a class="link" href="">About</a>
-                    <a class="link-long" href="">Servcies</a>
-                    <a class="link-long" href="">Portfolio</a>
-                    <a class="link-long" href="">Contact</a>
+                    <a class="link" href="/index.html">Home</a>
+                    <a class="link" href="/html/about.html">About</a>
+                    <a class="link-long" href="/html/services.html">Servcies</a>
+                    <a class="link-long" href="/index.html#portfolio">Portfolio</a>
+                    <a class="link-long" href="/html/contact.html">Contact</a>
                 </div>
                 <div class="footer-item">
                     <h2>Services</h2>
