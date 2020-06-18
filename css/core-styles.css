@@ -8,6 +8,14 @@
 	        box-sizing: border-box;
 }
 
+.skip {
+    position: absolute;
+    z-index: -1000;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
 button:hover {
     cursor: pointer;
 }
@@ -561,7 +569,7 @@ h2 span {
 	.navbar-menu {
 		width: 1100px !important;
 		min-height: 100px;
-		height: 100px;
+		height: 124px;
 		margin: auto;
 		position: absolute;
 		display: -webkit-box;
@@ -833,6 +841,7 @@ footer {
 }
 
 .bulb:before {
+    display: none;
     position: absolute;
     border-radius: 50%;
     content: '';

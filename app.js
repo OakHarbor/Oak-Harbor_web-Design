@@ -84,6 +84,7 @@ var $priceBoxH2 = $(".price-box h2");
 var $footer = $("footer");
 var $darkSVG = $(".dark-mode-svg");
 var $lightSVG = $(".light-mode-svg");
+var $bulb = $(".bulb");
 
 //
 // ABOUT PAGE --------------------------------------------------
@@ -148,6 +149,7 @@ const enableDarkMode = () => {
   $footer.addClass("dark-mode");
   $darkSVG.addClass("dark-mode");
   $lightSVG.addClass("dark-mode");
+  $bulb.addClass("dark-mode");
 
   //
   // ABOUT PAGE
@@ -187,6 +189,12 @@ const disableDarkMode = () => {
   $h3.removeClass("dark-mode");
   $p.removeClass("dark-mode");
 
+  // Navigation 
+  $navbarMenu.removeClass("dark-mode");
+  $sideNavA.removeClass("dark-mode");
+  $isActiveHamburger.removeClass("dark-mode");
+  $hamburgerInner.removeClass("dark-mode");
+
   // Landing
   $landing.removeClass("dark-mode");
   $lightSwoop.removeClass("dark-mode");
@@ -205,10 +213,28 @@ const disableDarkMode = () => {
   $footer.removeClass("dark-mode");
   $darkSVG.removeClass("dark-mode");
   $lightSVG.removeClass("dark-mode");
+  $bulb.removeClass("dark-mode");
 
   //
   // ABOUT PAGE
   //
+
+  $pageHeader.removeClass("dark-mode");
+
+  $circles.removeClass("dark-mode");
+  $contact.removeClass("dark-mode");
+  $contactH3.removeClass("dark-mode");
+  $input.removeClass("dark-mode");
+  $textArea.removeClass("dark-mode");
+
+  //
+  // SERVICES PAGE
+  //
+
+  $lineBox.removeClass("dark-mode");
+  $checkmarkLi.removeClass("dark-mode");
+  $updates.removeClass("dark-mode");
+  $box.removeClass("dark-mode");
 
 
   localStorage.setItem("darkMode", null)

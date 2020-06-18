@@ -6,6 +6,20 @@
     --light: #2e2e2e;
 }
 
+header {
+    max-width: 1100px;
+    position: relative;
+    margin: auto;
+}
+
+.top-dark-mode-button .dark-toggle {
+    background: rgb(230, 230, 230);
+    border-color: rgb(230, 230, 230);
+    -webkit-box-shadow: 0px 15px 5px -8px rgba(67,183,255,.5);
+            box-shadow: 0px 15px 5px -8px rgba(67,183,255,.5);
+    width: 35px;
+}
+
 .dark-mode-button {
     background: transparent;
     border: none;
@@ -245,11 +259,13 @@ h3.dark-mode {
     -webkit-box-shadow: 0px 0px 25px -5px rgba(67,183,255,1);
             box-shadow: 0px 0px 25px -5px rgba(67,183,255,1);
     border: transparent;
+    border: 1px solid var(--primary);
 }
 
 .price-box h2.dark-mode {
     background: var(--dark);
     color: #fff;
+    border-radius: 5px 5px 0 0;
 }
 
 .price-box li.dark-mode {
@@ -275,6 +291,10 @@ footer.dark-mode {
     background: rgba(67,183,255,0.66);
     opacity: .4;
     z-index: 100;
+}
+
+.bulb.dark-mode:before {
+    display: block;
 }
 
 .dark-mode-svg {
@@ -303,6 +323,7 @@ footer.dark-mode {
     background: var(--light);
     -webkit-box-shadow: 0px 0px 25px -5px rgba(67,183,255,1);
             box-shadow: 0px 0px 25px -5px rgba(67,183,255,1);
+            border: 1px solid var(--primary);
 }
 
 #contact h3.dark-mode {
@@ -396,6 +417,26 @@ footer.dark-mode {
 }
 
 @media screen and (min-width: 1026px) {
+
+    header {
+        max-width: 1100px;
+        position: relative;
+        margin: auto;
+    }
+
+    .navbar-menu.dark-mode {
+        height: 124px;
+    }
+    
+    .top-dark-mode-button {
+        position: absolute !important;
+        top: 44px !important;
+        right: -30px !important;
+        -webkit-transform: rotate(-90deg);
+            -ms-transform: rotate(-90deg);
+                transform: rotate(-90deg);
+        z-index: 1000;
+    }
 
     .navbar-menu.dark-mode {
         background: unset;
