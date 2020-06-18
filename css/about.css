@@ -464,7 +464,7 @@ form p{
         content: '';
         position: absolute;
         width: 800px;
-        left: 120px;
+        left: 130px;
         top: 75px;
         z-index: -1;
         border: 1px dashed rgba(0, 105, 243, 0.1);

@@ -166,6 +166,29 @@
     left: 15px;
 }
 
+/* Navigation */
+.navbar-menu.dark-mode {
+    background: var(--medium);
+    box-shadow: 10px 0px 25px 8px rgba(67,183,255,.5);
+    height: 120%;
+}
+
+.side-nav a.dark-mode {
+    color: #fff;
+}
+
+.hamburger-inner.dark-mode, .hamburger-inner.dark-mode::before, .hamburger-inner.dark-mode::after {
+    background: #fff;
+    -webkit-transition: .3s ease;
+    -o-transition: .3s ease;
+    transition: .3s ease;
+}
+
+.hamburger.is-active .hamburger-inner.dark-mode::after,
+.hamburger.is-active .hamburger-inner.dark-mode::before {
+    background: #fff;
+}
+
 /* Body and Core Elements */
 body.dark-mode {
     background: var(--dark);
@@ -254,4 +277,52 @@ footer.dark-mode {
 
 .light-mode-svg.dark-mode {
     display: none;
+}
+
+/* About Page ----------------------------------------------- */
+
+#page-header.dark-mode:before {
+    background: rgba(0, 7, 66, 0.9) !important;
+    background: -o-linear-gradient(305deg, rgba(0,16,153,.5) 0%, rgba(58,217,255,5) 96%);
+    background: linear-gradient(145deg, rgba(0,16,153,.5) 0%, rgba(58,217,255,.5) 96%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#001099",endColorstr="#3ad9ff",GradientType=1);
+}
+
+#contact.dark-mode {
+    background: var(--light);
+    -webkit-box-shadow: 0px 0px 25px -5px rgba(67,183,255,1);
+            box-shadow: 0px 0px 25px -5px rgba(67,183,255,1);
+}
+
+#contact h3.dark-mode {
+    color: #fff;
+}
+
+#contact input.dark-mode {
+    background: #000;
+    border: 1px solid var(--primary);
+    -webkit-box-shadow: 0px 0px 10px -5px rgba(67,183,255,1);
+            box-shadow: 0px 0px 10px -5px rgba(67,183,255,1);
+}
+
+#contact textarea.dark-mode {
+    background: #000;
+    border: 1px solid var(--primary);
+    -webkit-box-shadow: 0px 0px 10px -5px rgba(67,183,255,1);
+            box-shadow: 0px 0px 10px -5px rgba(67,183,255,1);
+}
+
+@media screen and (min-width: 1026px) {
+
+    .navbar-menu.dark-mode {
+        background: unset;
+    }
+
+    .navbar-menu.dark-mode {
+        box-shadow: none;
+    }
+
+    .circles.dark-mode:before {
+        border: 1px dashed rgba(67,183,255,.5);
+    }
 }

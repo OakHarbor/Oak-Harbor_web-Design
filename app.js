@@ -53,6 +53,12 @@ var $darkToggle = $(".dark-toggle");
 var $wire = $(".wire");
 var $triangle = $(".triangle");
 
+/* Navigation */
+var $navbarMenu = $(".navbar-menu");
+var $sideNavA = $(".side-nav a");
+var $isActiveHamburger = $(".hamburger.is-active .hamburger-inner::after");
+var $hamburgerInner = $(".hamburger-inner");
+
 /* Body and Core Elements */
 var $body = $("body");
 
@@ -79,6 +85,18 @@ var $footer = $("footer");
 var $darkSVG = $(".dark-mode-svg");
 var $lightSVG = $(".light-mode-svg");
 
+//
+// ABOUT PAGE --------------------------------------------------
+//
+
+var $pageHeader = $("#page-header")
+
+var $circles = $(".circles");
+var $contact = $("#contact");
+var $contactH3 = $("#contact h3");
+var $input = $("#contact input");
+var $textArea = $("#contact textarea");
+
 // Dark Mode Action
 let darkMode = localStorage.getItem("darkMode");
 const darkModeToggle = document.querySelector('.dark-mode-button');
@@ -96,6 +114,12 @@ const enableDarkMode = () => {
   $h2.addClass("dark-mode");
   $h3.addClass("dark-mode");
   $p.addClass("dark-mode");
+
+  // Navigation 
+  $navbarMenu.addClass("dark-mode");
+  $sideNavA.addClass("dark-mode");
+  $isActiveHamburger.addClass("dark-mode");
+  $hamburgerInner.addClass("dark-mode");
 
   // Landing
   $landing.addClass("dark-mode");
@@ -115,6 +139,18 @@ const enableDarkMode = () => {
   $footer.addClass("dark-mode");
   $darkSVG.addClass("dark-mode");
   $lightSVG.addClass("dark-mode");
+
+  //
+  // ABOUT PAGE
+  //
+
+  $pageHeader.addClass("dark-mode");
+
+  $circles.addClass("dark-mode");
+  $contact.addClass("dark-mode");
+  $contactH3.addClass("dark-mode");
+  $input.addClass("dark-mode");
+  $textArea.addClass("dark-mode");
 
   localStorage.setItem("darkMode", "enabled")
 }
@@ -151,6 +187,11 @@ const disableDarkMode = () => {
   $footer.removeClass("dark-mode");
   $darkSVG.removeClass("dark-mode");
   $lightSVG.removeClass("dark-mode");
+
+  //
+  // ABOUT PAGE
+  //
+
 
   localStorage.setItem("darkMode", null)
 }
