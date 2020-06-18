@@ -264,7 +264,16 @@ h3.dark-mode {
 <--- -------------------------- -*/
 
 footer.dark-mode {
-    background: var(--medium);
+    background: rgb(27, 27, 27);
+}
+
+.light-source.dark-mode {
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    background: rgba(67,183,255,0.66);
+    opacity: .4;
+    z-index: 100;
 }
 
 .dark-mode-svg {
@@ -310,6 +319,49 @@ footer.dark-mode {
     border: 1px solid var(--primary);
     -webkit-box-shadow: 0px 0px 10px -5px rgba(67,183,255,1);
             box-shadow: 0px 0px 10px -5px rgba(67,183,255,1);
+}
+
+/* Services Page ----------------------------------------------- */
+
+.line-box.dark-mode {
+    border-left: 2px dashed rgba(67,183,255,.6);
+    border-bottom: 2px dashed rgba(67,183,255,.6);
+}
+
+.line-box.dark-mode:after {
+    border-right: 2px dashed rgba(67,183,255,.6);
+}
+
+.checkmark li.dark-mode {
+    color: #fff;
+}
+
+#updates.dark-mode {
+    background: var(--dark);
+}
+
+.box.dark-mode {
+    background: var(--medium);
+    box-shadow: 0px -10px 25px -4px rgba(67,183,255,0.66);
+    animation-name: neon;
+    animation-timing-function: ease-in-out;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+}
+
+@keyframes neon {
+    0% {
+        box-shadow: 0px -10px 25px -4px rgba(67,183,255,0.66);
+    }
+
+    50% {
+        box-shadow: 0px -10px 25px -4px rgba(67,183,255,.4);
+    }
+
+    100% {
+        box-shadow: 0px -10px 25px -4px rgba(67,183,255,.66);
+    }
 }
 
 @media screen and (min-width: 1026px) {

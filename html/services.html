@@ -272,7 +272,8 @@
     <!-- ============================================ -->
 
     <footer>
-        <img aria-hidden="true" class="footer-img" src="/images/footer-swoosh.svg" alt="">
+        <img aria-hidden="true" class="footer-img light-mode-svg" src="/images/footer-swoosh.svg" alt="">
+        <img aria-hidden="true" class="footer-img dark-mode-svg" src="/images/footer-swoosh-dark.svg" alt="">
         <div class="container">
             <div class="flex-group">
                 <div class="dark-mode-group">
@@ -282,9 +283,11 @@
                         <div class="bulb"></div>
                     </div>
                     <!--SVG Light-->
-                    <div class="dark-toggle">
-                        <span></span>
-                    </div>
+                    <button class="dark-mode-button" aria-label="dark mode toggle">
+                        <span aria-hidden="true" class="dark-toggle">
+                            <span class="DTspan"></span>
+                        </span>
+                    </button>
                     <p>SWITCH TO DARK MODE</p>
                 </div>
                 <div class="footer-item image-box">

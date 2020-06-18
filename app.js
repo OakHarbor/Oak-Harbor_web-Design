@@ -97,6 +97,15 @@ var $contactH3 = $("#contact h3");
 var $input = $("#contact input");
 var $textArea = $("#contact textarea");
 
+//
+// SERVICES PAGE --------------------------------------------------
+//
+
+var $lineBox = $(".line-box");
+var $checkmarkLi = $(".checkmark li");
+var $updates = $("#updates");
+var $box = $(".box");
+
 // Dark Mode Action
 let darkMode = localStorage.getItem("darkMode");
 const darkModeToggle = document.querySelector('.dark-mode-button');
@@ -151,6 +160,15 @@ const enableDarkMode = () => {
   $contactH3.addClass("dark-mode");
   $input.addClass("dark-mode");
   $textArea.addClass("dark-mode");
+
+  //
+  // SERVICES PAGE
+  //
+
+  $lineBox.addClass("dark-mode");
+  $checkmarkLi.addClass("dark-mode");
+  $updates.addClass("dark-mode");
+  $box.addClass("dark-mode");
 
   localStorage.setItem("darkMode", "enabled")
 }
