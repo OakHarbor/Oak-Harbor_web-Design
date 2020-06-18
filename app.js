@@ -110,6 +110,7 @@ var $box = $(".box");
 // Dark Mode Action
 let darkMode = localStorage.getItem("darkMode");
 const darkModeToggle = document.querySelector('.dark-mode-button');
+const darkModeToggleFooter = document.querySelector('footer .dark-mode-button');
 
 const enableDarkMode = () => {
 
@@ -245,6 +246,15 @@ if (darkMode == "enabled") {
 }
 
 darkModeToggle.addEventListener('click', () => {
+  darkMode = localStorage.getItem("darkMode");
+  if (darkMode !== "enabled") {
+    enableDarkMode();
+  } else {
+    disableDarkMode();
+  }
+})
+
+darkModeToggleFooter.addEventListener('click', () => {
   darkMode = localStorage.getItem("darkMode");
   if (darkMode !== "enabled") {
     enableDarkMode();
