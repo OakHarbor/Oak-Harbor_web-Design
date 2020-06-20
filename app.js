@@ -52,6 +52,7 @@ var $DTspan = $(".DTspan");
 var $darkToggle = $(".dark-toggle");
 var $wire = $(".wire");
 var $triangle = $(".triangle");
+var $topDarkModeToggle = $(".top-dark-mode-button");
 
 /* Navigation */
 var $navbarMenu = $(".navbar-menu");
@@ -122,6 +123,7 @@ const enableDarkMode = () => {
   $DTspan.addClass("dark-mode");
   $wire.addClass("dark-mode");
   $triangle.addClass("dark-mode");
+  $topDarkModeToggle.addClass("dark-mode");
 
   $body.addClass("dark-mode");
 
@@ -189,6 +191,7 @@ const disableDarkMode = () => {
   $DTspan.removeClass("dark-mode");
   $wire.removeClass("dark-mode");
   $triangle.removeClass("dark-mode");
+  $topDarkModeToggle.removeClass("dark-mode");
 
   $body.removeClass("dark-mode");
 
