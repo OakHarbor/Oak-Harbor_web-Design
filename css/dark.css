@@ -290,6 +290,10 @@ h2.dark-mode, p.dark-mode {
     color: #fff !important;
 }
 
+p.dark-mode {
+    opacity: .9;
+}
+
 h3.dark-mode {
     color: var(--primary);
 }
