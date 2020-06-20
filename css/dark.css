@@ -359,9 +359,9 @@ h3.dark-mode {
 
 footer.dark-mode {
     background: #000;	
-	background: -webkit-gradient(linear, left top, left bottom, from(#286e99), to(#000));	
-	background: -o-linear-gradient(#286e99, #000);	
-	background: linear-gradient(#286e99, #000);	
+	background: -webkit-gradient(linear, left top, left bottom, from(rgb(34, 34, 34)), to(#000));	
+	background: -o-linear-gradient(rgb(34, 34, 34), #000);	
+	background: linear-gradient(rgb(34, 34, 34), #000);	
 }
 .light-source.dark-mode {
     position: absolute;
