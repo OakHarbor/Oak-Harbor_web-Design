@@ -256,7 +256,10 @@
 
 /* Navigation */
 .navbar-menu.dark-mode {
-    background: var(--medium);
+    background: #222;	
+	background: -webkit-gradient(linear, left top, left bottom, from(#222), to(#000));	
+	background: -o-linear-gradient(#222, #000);	
+	background: linear-gradient(#222, #000);	
     -webkit-box-shadow: 10px 0px 25px 8px rgba(67,183,255,.5);
             box-shadow: 10px 0px 25px 8px rgba(67,183,255,.5);
     height: 120%;
@@ -359,8 +362,8 @@ h3.dark-mode {
 
 footer.dark-mode {
     background: #000;	
-	background: -webkit-gradient(linear, left top, left bottom, from(rgb(34, 34, 34)), to(#000));	
 	background: -o-linear-gradient(rgb(34, 34, 34), #000);	
+	background: -webkit-gradient(linear, left top, left bottom, from(rgb(34, 34, 34)), to(#000));	
 	background: linear-gradient(rgb(34, 34, 34), #000);	
 }
 .light-source.dark-mode {
@@ -400,8 +403,8 @@ footer.dark-mode {
 
 #contact.dark-mode {
     background: #222;	
-	background: -webkit-gradient(linear, left top, left bottom, from(#333), to(#111));	
 	background: -o-linear-gradient(#333, #111);	
+	background: -webkit-gradient(linear, left top, left bottom, from(#333), to(#111));	
 	background: linear-gradient(#333, #111);	
     -webkit-box-shadow: 0px 0px 25px -5px rgba(67,183,255,1);
             box-shadow: 0px 0px 25px -5px rgba(67,183,255,1);
@@ -414,8 +417,8 @@ footer.dark-mode {
 
 #contact input.dark-mode {
     background: #222;	
-	background: -webkit-gradient(linear, left top, left bottom, from(#222), to(#000));	
 	background: -o-linear-gradient(#222, #000);	
+	background: -webkit-gradient(linear, left top, left bottom, from(#222), to(#000));	
 	background: linear-gradient(#222, #000);	
     border: 1px solid var(--primary);
     -webkit-box-shadow: 0px 0px 10px -5px rgba(67,183,255,1);
@@ -424,8 +427,8 @@ footer.dark-mode {
 
 #contact textarea.dark-mode {
     background: #000;	
-	background: -webkit-gradient(linear, left top, left bottom, from(#222), to(#000));	
 	background: -o-linear-gradient(#222, #000);	
+	background: -webkit-gradient(linear, left top, left bottom, from(#222), to(#000));	
 	background: linear-gradient(#222, #000);	
     border: 1px solid var(--primary);
     -webkit-box-shadow: 0px 0px 10px -5px rgba(67,183,255,1);
