@@ -10,17 +10,21 @@
     position: absolute;
     top: 60px;
     right: 15px;
-    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+            transform: rotate(-90deg);
     z-index: 1000;
 }
 
 .button-solid.dark-mode {
     background: transparent ;
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 	border: 1px solid #444;
 	border-left-color: #000;
 	border-radius: 5px;
-	box-shadow: 0 2px 0 #000;
+	-webkit-box-shadow: 0 2px 0 #000;
+	        box-shadow: 0 2px 0 #000;
 	color: #43b7ff;
 	display: block;
 	font-size: 12px;
@@ -30,16 +34,19 @@
     width: auto;
     height: 46px;
     padding: 15px 30px;
-	animation: glow 800ms ease-out infinite alternate;
+	-webkit-animation: glow 800ms ease-out infinite alternate;
+	        animation: glow 800ms ease-out infinite alternate;
 }
 
 #contact button.dark-mode {
     background: transparent ;
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 	border: 1px solid #444;
 	border-left-color: #000;
 	border-radius: 5px;
-	box-shadow: 0 2px 0 #000;
+	-webkit-box-shadow: 0 2px 0 #000;
+	        box-shadow: 0 2px 0 #000;
 	color: #43b7ff;
 	display: block;
 	font-size: 12px;
@@ -49,17 +56,33 @@
     width: auto;
     height: 46px;
     padding: 15px 30px;
-	animation: glow 800ms ease-out infinite alternate;
+	-webkit-animation: glow 800ms ease-out infinite alternate;
+	        animation: glow 800ms ease-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+    0% {
+		border-color: #43b7ff;
+		-webkit-box-shadow: 0 0 5px rgba(67,183,255,.2), inset 0 0 5px rgba(67,183,255,.1), 0 2px 0 #000;
+		        box-shadow: 0 0 5px rgba(67,183,255,.2), inset 0 0 5px rgba(67,183,255,.1), 0 2px 0 #000;
+    }	
+    100% {
+		border-color: #56beff;
+		-webkit-box-shadow: 0 0 20px rgba(67,183,255,.6), inset 0 0 10px rgba(67,183,255,.4), 0 2px 0 #000;
+		        box-shadow: 0 0 20px rgba(67,183,255,.6), inset 0 0 10px rgba(67,183,255,.4), 0 2px 0 #000;
+    }
 }
 
 @keyframes glow {
     0% {
 		border-color: #43b7ff;
-		box-shadow: 0 0 5px rgba(67,183,255,.2), inset 0 0 5px rgba(67,183,255,.1), 0 2px 0 #000;
+		-webkit-box-shadow: 0 0 5px rgba(67,183,255,.2), inset 0 0 5px rgba(67,183,255,.1), 0 2px 0 #000;
+		        box-shadow: 0 0 5px rgba(67,183,255,.2), inset 0 0 5px rgba(67,183,255,.1), 0 2px 0 #000;
     }	
     100% {
 		border-color: #56beff;
-		box-shadow: 0 0 20px rgba(67,183,255,.6), inset 0 0 10px rgba(67,183,255,.4), 0 2px 0 #000;
+		-webkit-box-shadow: 0 0 20px rgba(67,183,255,.6), inset 0 0 10px rgba(67,183,255,.4), 0 2px 0 #000;
+		        box-shadow: 0 0 20px rgba(67,183,255,.6), inset 0 0 10px rgba(67,183,255,.4), 0 2px 0 #000;
     }
 }
 
@@ -336,6 +359,8 @@ h3.dark-mode {
 
 footer.dark-mode {
     background: #000;	
+	background: -webkit-gradient(linear, left top, left bottom, from(#286e99), to(#000));	
+	background: -o-linear-gradient(#286e99, #000);	
 	background: linear-gradient(#286e99, #000);	
 }
 .light-source.dark-mode {
@@ -375,6 +400,8 @@ footer.dark-mode {
 
 #contact.dark-mode {
     background: #222;	
+	background: -webkit-gradient(linear, left top, left bottom, from(#333), to(#111));	
+	background: -o-linear-gradient(#333, #111);	
 	background: linear-gradient(#333, #111);	
     -webkit-box-shadow: 0px 0px 25px -5px rgba(67,183,255,1);
             box-shadow: 0px 0px 25px -5px rgba(67,183,255,1);
@@ -387,6 +414,8 @@ footer.dark-mode {
 
 #contact input.dark-mode {
     background: #222;	
+	background: -webkit-gradient(linear, left top, left bottom, from(#222), to(#000));	
+	background: -o-linear-gradient(#222, #000);	
 	background: linear-gradient(#222, #000);	
     border: 1px solid var(--primary);
     -webkit-box-shadow: 0px 0px 10px -5px rgba(67,183,255,1);
@@ -395,6 +424,8 @@ footer.dark-mode {
 
 #contact textarea.dark-mode {
     background: #000;	
+	background: -webkit-gradient(linear, left top, left bottom, from(#222), to(#000));	
+	background: -o-linear-gradient(#222, #000);	
 	background: linear-gradient(#222, #000);	
     border: 1px solid var(--primary);
     -webkit-box-shadow: 0px 0px 10px -5px rgba(67,183,255,1);
