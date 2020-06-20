@@ -66,6 +66,9 @@ var $h2 = $("h2");
 var $h3 = $("h3");
 var $p = $("p");
 
+var $button = $(".button-solid");
+var $submit = $("#contact button");
+
 /* Landing */
 var $landing = $("#landing");
 var $lightSwoop = $(".light-swoop");
@@ -125,6 +128,9 @@ const enableDarkMode = () => {
   $h2.addClass("dark-mode");
   $h3.addClass("dark-mode");
   $p.addClass("dark-mode");
+
+  $button.addClass("dark-mode");
+  $submit.addClass("dark-mode");
 
   // Navigation 
   $navbarMenu.addClass("dark-mode");
@@ -189,6 +195,9 @@ const disableDarkMode = () => {
   $h2.removeClass("dark-mode");
   $h3.removeClass("dark-mode");
   $p.removeClass("dark-mode");
+
+  $button.removeClass("dark-mode");
+  $submit.removeClass("dark-mode");
 
   // Navigation 
   $navbarMenu.removeClass("dark-mode");

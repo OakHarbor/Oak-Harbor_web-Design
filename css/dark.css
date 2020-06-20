@@ -14,6 +14,55 @@
     z-index: 1000;
 }
 
+.button-solid.dark-mode {
+    background: transparent ;
+	box-sizing: border-box;
+	border: 1px solid #444;
+	border-left-color: #000;
+	border-radius: 5px;
+	box-shadow: 0 2px 0 #000;
+	color: #43b7ff;
+	display: block;
+	font-size: 12px;
+	font-weight: bold;
+	position: relative;
+	text-shadow: 0 -1px 0 #000;
+    width: auto;
+    height: 46px;
+    padding: 15px 30px;
+	animation: glow 800ms ease-out infinite alternate;
+}
+
+#contact button.dark-mode {
+    background: transparent ;
+	box-sizing: border-box;
+	border: 1px solid #444;
+	border-left-color: #000;
+	border-radius: 5px;
+	box-shadow: 0 2px 0 #000;
+	color: #43b7ff;
+	display: block;
+	font-size: 12px;
+	font-weight: bold;
+	position: relative;
+	text-shadow: 0 -1px 0 #000;
+    width: auto;
+    height: 46px;
+    padding: 15px 30px;
+	animation: glow 800ms ease-out infinite alternate;
+}
+
+@keyframes glow {
+    0% {
+		border-color: #43b7ff;
+		box-shadow: 0 0 5px rgba(67,183,255,.2), inset 0 0 5px rgba(67,183,255,.1), 0 2px 0 #000;
+    }	
+    100% {
+		border-color: #56beff;
+		box-shadow: 0 0 20px rgba(67,183,255,.6), inset 0 0 10px rgba(67,183,255,.4), 0 2px 0 #000;
+    }
+}
+
 .top-dark-mode-button .dark-toggle {
     background: rgb(230, 230, 230);
     border-color: rgb(230, 230, 230);
@@ -286,9 +335,9 @@ h3.dark-mode {
 <--- -------------------------- -*/
 
 footer.dark-mode {
-    background: rgb(27, 27, 27);
+    background: #000;	
+	background: linear-gradient(#286e99, #000);	
 }
-
 .light-source.dark-mode {
     position: absolute;
     height: 200px;
@@ -325,7 +374,8 @@ footer.dark-mode {
 }
 
 #contact.dark-mode {
-    background: var(--light);
+    background: #222;	
+	background: linear-gradient(#333, #111);	
     -webkit-box-shadow: 0px 0px 25px -5px rgba(67,183,255,1);
             box-shadow: 0px 0px 25px -5px rgba(67,183,255,1);
             border: 1px solid var(--primary);
@@ -336,14 +386,16 @@ footer.dark-mode {
 }
 
 #contact input.dark-mode {
-    background: #000;
+    background: #222;	
+	background: linear-gradient(#222, #000);	
     border: 1px solid var(--primary);
     -webkit-box-shadow: 0px 0px 10px -5px rgba(67,183,255,1);
             box-shadow: 0px 0px 10px -5px rgba(67,183,255,1);
 }
 
 #contact textarea.dark-mode {
-    background: #000;
+    background: #000;	
+	background: linear-gradient(#222, #000);	
     border: 1px solid var(--primary);
     -webkit-box-shadow: 0px 0px 10px -5px rgba(67,183,255,1);
             box-shadow: 0px 0px 10px -5px rgba(67,183,255,1);
