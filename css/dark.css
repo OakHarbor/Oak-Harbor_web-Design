@@ -352,6 +352,11 @@
     height: 120%;
 }
 
+.neon.dark-mode {
+    visibility: visible;
+    opacity: 1;
+}
+
 .side-nav a.dark-mode {
     color: #fff;
 }
@@ -621,7 +626,7 @@ footer.dark-mode {
     .top-dark-mode-button {
         position: absolute !important;
         top: 44px !important;
-        right: -30px !important;
+        right: 0px !important;
         -webkit-transform: rotate(-90deg);
             -ms-transform: rotate(-90deg);
                 transform: rotate(-90deg);

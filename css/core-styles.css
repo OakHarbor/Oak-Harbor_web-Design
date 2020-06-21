@@ -336,51 +336,75 @@ body {
 }
 
 .neon {
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: 100ms ease-in;
+    -o-transition: 100ms ease-in;
+    transition: 100ms ease-in;
     font-family: 'Yellowtail';
     color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     position: absolute;
     top: 44px;
     left: 100px;
-    transform: rotate(-10deg);
+    z-index: 1000;
 }
 
 .neon span {
     font-family: 'Yellowtail';
     display: table-cell;
     margin: 0;
-    font-size: 1.7em;
+    font-size: 1.5em;
     padding: 0;
-    animation: neonGlow 3s linear infinite;
+    -webkit-animation: neonGlow 3s linear infinite;
+            animation: neonGlow 3s linear infinite;
 }
 
 .neon span:nth-child(1) {
-    animation-delay: 0s;
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s;
+}
+.neon span:nth-child(2) {
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s;
 }
 .neon span:nth-child(3) {
-    animation-delay: .2s;
+    -webkit-animation-delay: 1.2s;
+            animation-delay: 1.2s;
+}
+.neon span:nth-child(4) {
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s;
 }
 .neon span:nth-child(5) {
-    animation-delay: 1s;
+    -webkit-animation-delay: 2s;
+            animation-delay: 2s;
 }
 .neon span:nth-child(6) {
-    animation-delay: 1.45s;
+    -webkit-animation-delay: 2.45s;
+            animation-delay: 2.45s;
 }
 .neon span:nth-child(7) {
-    animation-delay: 1.75s;
+    -webkit-animation-delay: 2.75s;
+            animation-delay: 2.75s;
 }
 .neon span:nth-child(8) {
-    animation-delay: 1.75s;
+    -webkit-animation-delay: 2.75s;
+            animation-delay: 2.75s;
 }
 .neon span:nth-child(9) {
-    animation-delay: 1.75s;
+    -webkit-animation-delay: 2.75s;
+            animation-delay: 2.75s;
 }
 
 
-@keyframes neonGlow {
+@-webkit-keyframes neonGlow {
     0%, 100% {
         color: #abe1fe;
-        filter: blur(2px);
+        -webkit-filter: blur(2px);
+                filter: blur(2px);
         text-shadow: 0 0 10px #43b7ff,
                     0 0 20px #43b7ff,
                     0 0 40px #43b7ff,
@@ -394,7 +418,33 @@ body {
 
     5%, 95% {
         color: #fff;
-        filter: blur(0px);
+        -webkit-filter: blur(0px);
+                filter: blur(0px);
+        text-shadow: none,
+    }
+}
+
+
+@keyframes neonGlow {
+    0%, 100% {
+        color: #abe1fe;
+        -webkit-filter: blur(2px);
+                filter: blur(2px);
+        text-shadow: 0 0 10px #43b7ff,
+                    0 0 20px #43b7ff,
+                    0 0 40px #43b7ff,
+                    0 0 80px #43b7ff,
+                    0 0 120px #43b7ff,
+                    0 0 200px #43b7ff,
+                    0 0 300px #43b7ff,
+                    0 0 400px #43b7ff;
+
+    }
+
+    5%, 95% {
+        color: #fff;
+        -webkit-filter: blur(0px);
+                filter: blur(0px);
         text-shadow: none,
     }
 }
@@ -633,7 +683,16 @@ body {
         height: 124px;
         background: transparent;
         z-index: 100;
-	}
+    }
+    
+    .neon {
+        top: 80px;
+        left: 200px;
+    }
+
+    .neon span {
+        font-size: 2em;
+    }
 
 	.navbar-menu {
 		width: 1100px !important;
@@ -679,6 +738,7 @@ body {
 		    -ms-flex-pack: end;
 		        justify-content: flex-end;
         right: 0;
+        overflow: visible;
 	}
 
 	.side-nav ul li {
@@ -729,10 +789,14 @@ body {
 
 	.side-nav li {
 		color: #212121;
-	}
+    }
+    
+    #on-top {
+        margin-right: 30px;
+    }
 
 	#on-top li  {
-		float: right;
+        float: right;
 	}
 
 	.active-menu {
@@ -1129,6 +1193,20 @@ footer img {
     margin-top: 0px;
 }
 
+.footer-logo {
+    height: 60px;
+    margin-bottom: 100px;
+}
+
+#footer-neon {
+    left: 120px;
+    top: 40px;
+}
+
+#footer-neon span {
+    font-size: 1.7em;
+}
+
 .footer-line {
     height: 1px;
     width: 200px;
@@ -1215,6 +1293,19 @@ footer img {
     .dark-mode-group {
         height: 430px;
         top: -310px;
+    }
+
+    .footer-logo {
+        height: 100px;
+    }
+
+    #footer-neon {
+        top: 70px;
+        left: 210px;
+    }
+
+    #footer-neon span {
+        font-size: 2.6em;
     }
 
 }
