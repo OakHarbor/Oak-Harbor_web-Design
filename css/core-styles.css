@@ -326,9 +326,77 @@ h2 span {
 /* Navigation Links */
 
 .mobile-wrapper img {
-    height: 30px;
+    height: 50px;
     position: relative;
     z-index: 1000;
+}
+
+body {
+    background: #000;
+}
+
+.neon {
+    font-family: 'Yellowtail';
+    color: #fff;
+    display: flex;
+    position: absolute;
+    top: 44px;
+    left: 100px;
+    transform: rotate(-10deg);
+}
+
+.neon span {
+    font-family: 'Yellowtail';
+    display: table-cell;
+    margin: 0;
+    font-size: 1.7em;
+    padding: 0;
+    animation: neonGlow 3s linear infinite;
+}
+
+.neon span:nth-child(1) {
+    animation-delay: 0s;
+}
+.neon span:nth-child(3) {
+    animation-delay: .2s;
+}
+.neon span:nth-child(5) {
+    animation-delay: 1s;
+}
+.neon span:nth-child(6) {
+    animation-delay: 1.45s;
+}
+.neon span:nth-child(7) {
+    animation-delay: 1.75s;
+}
+.neon span:nth-child(8) {
+    animation-delay: 1.75s;
+}
+.neon span:nth-child(9) {
+    animation-delay: 1.75s;
+}
+
+
+@keyframes neonGlow {
+    0%, 100% {
+        color: #abe1fe;
+        filter: blur(2px);
+        text-shadow: 0 0 10px #43b7ff,
+                    0 0 20px #43b7ff,
+                    0 0 40px #43b7ff,
+                    0 0 80px #43b7ff,
+                    0 0 120px #43b7ff,
+                    0 0 200px #43b7ff,
+                    0 0 300px #43b7ff,
+                    0 0 400px #43b7ff;
+
+    }
+
+    5%, 95% {
+        color: #fff;
+        filter: blur(0px);
+        text-shadow: none,
+    }
 }
 
 .navbar-menu {
