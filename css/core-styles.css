@@ -363,6 +363,40 @@ h2 span {
             animation: neonGlow 3s linear infinite;
 }
 
+#what-neon span {
+    -webkit-animation: neonGlowSoft 3s linear infinite;
+            animation: neonGlowSoft 3s linear infinite;
+}
+
+#what-neon span:nth-child(2) {
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s;
+}
+#what-neon span:nth-child(3) {
+    -webkit-animation-delay: 1.2s;
+            animation-delay: 1.2s;
+}
+
+#our-neon span {
+    -webkit-animation: neonGlowSoft 3s linear infinite;
+            animation: neonGlowSoft 3s linear infinite;
+}
+
+#our-neon span:nth-child(2) {
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s;
+}
+
+#who-neon span {
+    -webkit-animation: neonGlowSoft 3s linear infinite;
+            animation: neonGlowSoft 3s linear infinite;
+}
+
+#who-neon span:nth-child(3) {
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s;
+}
+
 .neon span:nth-child(1) {
     -webkit-animation-delay: 1s;
             animation-delay: 1s;
@@ -400,8 +434,7 @@ h2 span {
             animation-delay: 2.75s;
 }
 
-
-@-webkit-keyframes neonGlow {
+@keyframes neonGlow {
     0%, 100% {
         color: #abe1fe;
         -webkit-filter: blur(2px);
@@ -425,8 +458,7 @@ h2 span {
     }
 }
 
-
-@keyframes neonGlow {
+@keyframes neonGlowSoft {
     0%, 100% {
         color: #abe1fe;
         -webkit-filter: blur(2px);
@@ -434,12 +466,7 @@ h2 span {
         text-shadow: 0 0 10px #43b7ff,
                     0 0 20px #43b7ff,
                     0 0 40px #43b7ff,
-                    0 0 80px #43b7ff,
-                    0 0 120px #43b7ff,
-                    0 0 200px #43b7ff,
-                    0 0 300px #43b7ff,
-                    0 0 400px #43b7ff;
-
+                    0 0 80px #43b7ff;
     }
 
     5%, 95% {
