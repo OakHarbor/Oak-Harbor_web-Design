@@ -396,7 +396,7 @@ form p{
                 justify-content: space-between;
         width: 1000px;
         margin: 100px auto 100px auto;
-        padding-top: 100px;
+        padding-top: 200px;
         height: 300px;
         overflow: visible;
     }
@@ -424,7 +424,7 @@ form p{
         height: 600px !important;
         width: 500px !important;
         z-index: 1;
-        top: 50px;
+        top: 150px;
         left: -50px;
         opacity: .1;
     }

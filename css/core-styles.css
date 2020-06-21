@@ -335,6 +335,10 @@ body {
     background: #000;
 }
 
+#desktop-neon {
+    display: none;
+}
+
 .neon {
     visibility: hidden;
     opacity: 0;
@@ -683,6 +687,10 @@ body {
         height: 124px;
         background: transparent;
         z-index: 100;
+    }
+
+    #desktop-neon {
+        display: block;
     }
     
     .neon {
