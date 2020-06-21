@@ -434,6 +434,30 @@ h2 span {
             animation-delay: 2.75s;
 }
 
+@-webkit-keyframes neonGlow {
+    0%, 100% {
+        color: #abe1fe;
+        -webkit-filter: blur(2px);
+                filter: blur(2px);
+        text-shadow: 0 0 10px #43b7ff,
+                    0 0 20px #43b7ff,
+                    0 0 40px #43b7ff,
+                    0 0 80px #43b7ff,
+                    0 0 120px #43b7ff,
+                    0 0 200px #43b7ff,
+                    0 0 300px #43b7ff,
+                    0 0 400px #43b7ff;
+
+    }
+
+    5%, 95% {
+        color: #fff;
+        -webkit-filter: blur(0px);
+                filter: blur(0px);
+        text-shadow: none,
+    }
+}
+
 @keyframes neonGlow {
     0%, 100% {
         color: #abe1fe;
@@ -448,6 +472,25 @@ h2 span {
                     0 0 300px #43b7ff,
                     0 0 400px #43b7ff;
 
+    }
+
+    5%, 95% {
+        color: #fff;
+        -webkit-filter: blur(0px);
+                filter: blur(0px);
+        text-shadow: none,
+    }
+}
+
+@-webkit-keyframes neonGlowSoft {
+    0%, 100% {
+        color: #abe1fe;
+        -webkit-filter: blur(2px);
+                filter: blur(2px);
+        text-shadow: 0 0 10px #43b7ff,
+                    0 0 20px #43b7ff,
+                    0 0 40px #43b7ff,
+                    0 0 80px #43b7ff;
     }
 
     5%, 95% {
