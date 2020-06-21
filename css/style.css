@@ -118,6 +118,11 @@
 .what-we-do-topper h2 span {
     color: var(--primary);
     margin-right: 10px;
+    opacity: 1;
+}
+
+.h2-span {
+    opacity: 1;
 }
 
 .what-we-do-topper h3 {
@@ -942,6 +947,10 @@
     /*-- -------------------------- -->
     <---            ABOUT           -->
     <--- -------------------------- -*/
+
+    #who-we-are h2 {
+        width: 300px;
+    }
 
     .who-topper h2 {
         font-size: 40px;

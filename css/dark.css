@@ -413,6 +413,52 @@ h3.dark-mode {
     display: none;
 }
 
+#what-neon {
+    display: none;
+}
+
+#what-neon span {
+    font-size: 1.3em;
+}
+
+#our-neon {
+    display: none;
+}
+
+#our span {
+    font-size: 1.3em;
+}
+
+#who-neon {
+    display: none;
+}
+
+#who-neon span {
+    font-size: 1.3em;
+}
+
+.h2-span.dark-mode {
+    opacity: 0;
+}
+
+#what-neon.dark-mode {
+    display: block;
+    top: -5px;
+    left: 13px;
+}
+
+#our-neon.dark-mode {
+    display: block;
+    top: -12px;
+    left: -4px;
+}
+
+#who-neon.dark-mode {
+    display: block;
+    top: -5px;
+    left: 10px;
+}
+
 /*-- -------------------------- -->
 <---         PORTFOLIO          -->
 <--- -------------------------- -*/
@@ -644,5 +690,35 @@ footer.dark-mode {
 
     .circles.dark-mode:before {
         border: 1px dashed rgba(67,183,255,.5);
+    }
+
+    #what-neon span {
+        font-size: 1.3em !important;
+    }
+
+    #our-neon span {
+        font-size: 1.5em;
+    }
+
+    #who-neon span {
+        font-size: 1.3em;
+    }
+
+    #what-neon.dark-mode {
+        display: block;
+        top: -10px;
+        left: 19px;
+    }
+    
+    #our-neon.dark-mode {
+        display: block;
+        top: -17px;
+        left: 10px;
+    }
+    
+    #who-neon.dark-mode {
+        display: block;
+        top: -10px;
+        left: 17px;
     }
 }
