@@ -272,6 +272,10 @@
 <---          PORTFOLIO         -->
 <--- -------------------------- -*/
 
+#portolio {
+    height: 2039px !important;
+}
+
 #portfolio h2 {
     color: #121212;
     font-size: 1.7em;
@@ -491,6 +495,7 @@
 
 #pricing {
     margin-top: 50px;
+    height: 1666px !important;
 }
 
 .price-box {
