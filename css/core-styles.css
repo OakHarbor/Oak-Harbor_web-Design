@@ -325,6 +325,10 @@ h2 span {
 
 /* Navigation Links */
 
+#desktop-neon {
+    display: none !important;
+}
+
 .mobile-wrapper img {
     height: 50px;
     position: relative;
@@ -679,6 +683,10 @@ h2 span {
         height: 124px;
         background: transparent;
         z-index: 100;
+    }
+
+    #desktop-neon {
+        display: block !important;
     }
     
     .neon {
