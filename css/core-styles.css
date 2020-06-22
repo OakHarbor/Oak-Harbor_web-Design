@@ -4,7 +4,6 @@
 <--- -------------------------- -*/
 
 * {
-    transition: .1s ease;
 	-webkit-box-sizing: border-box;
 	        box-sizing: border-box;
 }

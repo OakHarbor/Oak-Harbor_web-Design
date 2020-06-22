@@ -65,14 +65,11 @@ var $neon = $(".neon");
 var $body = $("body");
 
 var $h2 = $("h2");
-var $h2Span = $(".h2-span");
 var $h3 = $("h3");
 var $p = $("p");
 
 var $button = $(".button-solid");
 var $submit = $("#contact button");
-
-var $whatNeon = $("#what-neon");
 
 /* Landing */
 var $landing = $("#landing");
@@ -81,8 +78,6 @@ var $darkSwoop = $(".dark-swoop");
 
 /* Portfolio */
 var $example = $(".example");
-var $ourSpan = $("#our-neon");
-var $whoSpan = $("#who-neon");
 
 /* Pricing */
 var $priceBox = $(".price-box");
@@ -134,14 +129,11 @@ const enableDarkMode = () => {
   $body.addClass("dark-mode");
 
   $h2.addClass("dark-mode");
-  $h2Span.addClass("dark-mode");
   $h3.addClass("dark-mode");
   $p.addClass("dark-mode");
 
   $button.addClass("dark-mode");
   $submit.addClass("dark-mode");
-
-  $whatNeon.addClass("dark-mode");
 
   // Navigation 
   $navbarMenu.addClass("dark-mode");
@@ -157,8 +149,6 @@ const enableDarkMode = () => {
 
   // Portfolio
   $example.addClass("dark-mode");
-  $ourSpan.addClass("dark-mode");
-  $whoSpan.addClass("dark-mode");
 
   // Pricing
   $priceBox.addClass("dark-mode");
@@ -210,7 +200,6 @@ const disableDarkMode = () => {
 
   $h2.removeClass("dark-mode");
   $h2.removeClass("dark-mode");
-  $h2Span.removeClass("dark-mode");
   $h3.removeClass("dark-mode");
   $p.removeClass("dark-mode");
 
@@ -230,8 +219,6 @@ const disableDarkMode = () => {
 
   // Portfolio
   $example.removeClass("dark-mode");
-  $ourSpan.removeClass("dark-mode");
-  $whoSpan.removeClass("dark-mode");
 
   // Pricing
   $priceBox.removeClass("dark-mode");
