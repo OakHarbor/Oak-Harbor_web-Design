@@ -522,6 +522,12 @@ footer.dark-mode {
     -webkit-box-shadow: 0px 0px 25px -5px rgba(67,183,255,1);
             box-shadow: 0px 0px 25px -5px rgba(67,183,255,1);
             border: 1px solid var(--primary);
+    animation: glow;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-delay: .5s;
 }
 
 #contact h3.dark-mode {
@@ -530,12 +536,21 @@ footer.dark-mode {
 
 #contact input.dark-mode {
     background: #222;	
-	background: -o-linear-gradient(#222, #000);	
+	background: -o-linear-gradient(#222, #333);	
 	background: -webkit-gradient(linear, left top, left bottom, from(#222), to(#000));	
 	background: linear-gradient(#222, #000);	
+    color: #fff;
+}
+
+#contact input:focus.dark-mode {
     border: 1px solid var(--primary);
     -webkit-box-shadow: 0px 0px 10px -5px rgba(67,183,255,1);
             box-shadow: 0px 0px 10px -5px rgba(67,183,255,1);
+    animation: glow;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
 }
 
 #contact textarea.dark-mode {
@@ -543,9 +558,18 @@ footer.dark-mode {
 	background: -o-linear-gradient(#222, #000);	
 	background: -webkit-gradient(linear, left top, left bottom, from(#222), to(#000));	
 	background: linear-gradient(#222, #000);	
+    color: #fff;
+}
+
+#contact textarea:focus.dark-mode {
     border: 1px solid var(--primary);
     -webkit-box-shadow: 0px 0px 10px -5px rgba(67,183,255,1);
             box-shadow: 0px 0px 10px -5px rgba(67,183,255,1);
+    animation: glow;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
 }
 
 /* Services Page ----------------------------------------------- */
