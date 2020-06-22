@@ -331,11 +331,6 @@ h2 span {
     z-index: 1000;
 }
 
-
-#desktop-neon {
-    display: none;
-}
-
 .neon {
     visibility: hidden;
     opacity: 0;
@@ -361,40 +356,6 @@ h2 span {
     padding: 0;
     -webkit-animation: neonGlow 3s linear infinite;
             animation: neonGlow 3s linear infinite;
-}
-
-#what-neon span {
-    -webkit-animation: neonGlowSoft 3s linear infinite;
-            animation: neonGlowSoft 3s linear infinite;
-}
-
-#what-neon span:nth-child(2) {
-    -webkit-animation-delay: 1s;
-            animation-delay: 1s;
-}
-#what-neon span:nth-child(3) {
-    -webkit-animation-delay: 1.2s;
-            animation-delay: 1.2s;
-}
-
-#our-neon span {
-    -webkit-animation: neonGlowSoft 3s linear infinite;
-            animation: neonGlowSoft 3s linear infinite;
-}
-
-#our-neon span:nth-child(2) {
-    -webkit-animation-delay: 1s;
-            animation-delay: 1s;
-}
-
-#who-neon span {
-    -webkit-animation: neonGlowSoft 3s linear infinite;
-            animation: neonGlowSoft 3s linear infinite;
-}
-
-#who-neon span:nth-child(3) {
-    -webkit-animation-delay: 1s;
-            animation-delay: 1s;
 }
 
 .neon span:nth-child(1) {
@@ -434,6 +395,7 @@ h2 span {
             animation-delay: 2.75s;
 }
 
+
 @-webkit-keyframes neonGlow {
     0%, 100% {
         color: #abe1fe;
@@ -444,6 +406,8 @@ h2 span {
                     0 0 40px #43b7ff,
                     0 0 80px #43b7ff,
                     0 0 120px #43b7ff,
+                    0 0 200px #43b7ff,
+                    0 0 300px #43b7ff,
                     0 0 400px #43b7ff;
 
     }
@@ -456,6 +420,7 @@ h2 span {
     }
 }
 
+
 @keyframes neonGlow {
     0%, 100% {
         color: #abe1fe;
@@ -466,6 +431,8 @@ h2 span {
                     0 0 40px #43b7ff,
                     0 0 80px #43b7ff,
                     0 0 120px #43b7ff,
+                    0 0 200px #43b7ff,
+                    0 0 300px #43b7ff,
                     0 0 400px #43b7ff;
 
     }
@@ -712,10 +679,6 @@ h2 span {
         height: 124px;
         background: transparent;
         z-index: 100;
-    }
-
-    #desktop-neon {
-        display: block;
     }
     
     .neon {
@@ -1483,3 +1446,15 @@ footer img {
     }
 
 }
+© 2020 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Help
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
