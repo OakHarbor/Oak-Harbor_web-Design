@@ -199,7 +199,6 @@ const disableDarkMode = () => {
   $body.removeClass("dark-mode");
 
   $h2.removeClass("dark-mode");
-  $h2.removeClass("dark-mode");
   $h3.removeClass("dark-mode");
   $p.removeClass("dark-mode");
 
