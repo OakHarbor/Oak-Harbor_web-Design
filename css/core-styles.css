@@ -409,11 +409,8 @@ h2 span {
         text-shadow: 0 0 10px #43b7ff,
                     0 0 20px #43b7ff,
                     0 0 40px #43b7ff,
-                    0 0 80px #43b7ff,
-                    0 0 120px #43b7ff,
-                    0 0 200px #43b7ff,
-                    0 0 300px #43b7ff,
-                    0 0 400px #43b7ff;
+                    0 0 50px #43b7ff,
+                    0 0 60px #43b7ff;
 
     }
 
@@ -434,11 +431,8 @@ h2 span {
         text-shadow: 0 0 10px #43b7ff,
                     0 0 20px #43b7ff,
                     0 0 40px #43b7ff,
-                    0 0 80px #43b7ff,
-                    0 0 120px #43b7ff,
-                    0 0 200px #43b7ff,
-                    0 0 300px #43b7ff,
-                    0 0 400px #43b7ff;
+                    0 0 50px #43b7ff,
+                    0 0 60px #43b7ff;
 
     }
 
@@ -1190,7 +1184,7 @@ footer {
     -o-transition: .3s ease;
     transition: .3s ease;
     -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
 }
 
 footer img {
