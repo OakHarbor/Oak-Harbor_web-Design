@@ -1330,6 +1330,10 @@ footer img {
         margin-bottom: 56px;
     }
 
+    .footer-logo {
+        margin-bottom: 45px;
+    }
+
     .link:before {
         content: '';
         position: absolute;

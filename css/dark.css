@@ -429,6 +429,10 @@ h3.dark-mode {
     border-right: 1px solid var(--primary);
     border-top: 1px solid var(--primary);
     border-left: 1px solid var(--primary);
+    -webkit-animation: glow 3s ease-out infinite alternate;
+            animation: glow 3s ease-out infinite alternate;
+    -webkit-animation-delay: .3s;
+            animation-delay: .3s;
 }
 
 /*-- -------------------------- -->
@@ -445,6 +449,10 @@ h3.dark-mode {
             box-shadow: 0px 0px 25px -5px rgba(67,183,255,1);
     border: transparent;
     border: 1px solid var(--primary);
+    -webkit-animation: glow 3s ease-in-out infinite alternate;
+            animation: glow 3s ease-in-out infinite alternate;
+    -webkit-animation-delay: .3s;
+            animation-delay: .3s;
 }
 
 .price-box h2.dark-mode {
@@ -612,6 +620,15 @@ footer.dark-mode {
     }
 }
 
+/* Tablets */
+@media screen and (min-width: 500px) and (max-width: 1025px) {
+
+    #portfolio.dark-mode {
+        height: auto !important;
+    }
+
+}
+
 @media screen and (min-width: 1026px) {
 
     header {
@@ -653,5 +670,13 @@ footer.dark-mode {
 
     .circles.dark-mode:before {
         border: 1px dashed rgba(67,183,255,.5);
+    }
+
+    #portfolio.dark-mode {
+        height: auto !important;
+    }
+
+    #prices.dark-mode {
+        height: 100px !important;
     }
 }
