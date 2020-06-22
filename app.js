@@ -77,9 +77,11 @@ var $lightSwoop = $(".light-swoop");
 var $darkSwoop = $(".dark-swoop");
 
 /* Portfolio */
+var $portfolio = $("#portfolio");
 var $example = $(".example");
 
 /* Pricing */
+var $prices = $("#prices");
 var $priceBox = $(".price-box");
 var $priceBoxLi = $(".price-box li");
 var $priceBoxSpan = $(".price-box span");
@@ -149,8 +151,10 @@ const enableDarkMode = () => {
 
   // Portfolio
   $example.addClass("dark-mode");
+  $portfolio.addClass("dark-mode");
 
   // Pricing
+  $prices.addClass("dark-mode");
   $priceBox.addClass("dark-mode");
   $priceBoxLi.addClass("dark-mode");
   $priceBoxSpan.addClass("dark-mode");
@@ -218,8 +222,10 @@ const disableDarkMode = () => {
 
   // Portfolio
   $example.removeClass("dark-mode");
+  $portfolio.addClass("dark-mode");
 
   // Pricing
+  $prices.addClass("dark-mode");
   $priceBox.removeClass("dark-mode");
   $priceBoxLi.removeClass("dark-mode");
   $priceBoxSpan.removeClass("dark-mode");
