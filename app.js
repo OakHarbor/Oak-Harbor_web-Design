@@ -142,7 +142,6 @@ const enableDarkMode = () => {
   $sideNavA.addClass("dark-mode");
   $isActiveHamburger.addClass("dark-mode");
   $hamburgerInner.addClass("dark-mode");
-  $neon.addClass("dark-mode");
 
   // Landing
   $landing.addClass("dark-mode");
@@ -187,6 +186,8 @@ const enableDarkMode = () => {
   $updates.addClass("dark-mode");
   $box.addClass("dark-mode");
 
+  $neon.addClass("dark-mode");
+
   localStorage.setItem("darkMode", "enabled")
 }
 
@@ -198,7 +199,6 @@ const disableDarkMode = () => {
   $wire.removeClass("dark-mode");
   $triangle.removeClass("dark-mode");
   $topDarkModeToggle.removeClass("dark-mode");
-  $neon.removeClass("dark-mode");
 
   $body.removeClass("dark-mode");
 
@@ -258,6 +258,7 @@ const disableDarkMode = () => {
   $updates.removeClass("dark-mode");
   $box.removeClass("dark-mode");
 
+  $neon.removeClass("dark-mode");
 
   localStorage.setItem("darkMode", null)
 }
