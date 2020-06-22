@@ -333,6 +333,7 @@ h2 span {
     height: 50px;
     position: relative;
     z-index: 1000;
+    top: 10px;
 }
 
 .neon {
@@ -347,7 +348,7 @@ h2 span {
     display: -ms-flexbox;
     display: flex;
     position: absolute;
-    top: 44px;
+    top: 54px;
     left: 100px;
     z-index: 1000;
 }
