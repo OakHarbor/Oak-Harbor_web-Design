@@ -415,6 +415,14 @@ h3.dark-mode {
 <---         PORTFOLIO          -->
 <--- -------------------------- -*/
 
+.example.dark-mode {
+    background: var(--medium);
+    -webkit-box-shadow: 0px 0px 25px -5px rgba(67,183,255,1);
+            box-shadow: 0px 0px 25px -5px rgba(67,183,255,1);
+    border-right: 1px solid var(--primary);
+    border-top: 1px solid var(--primary);
+    border-left: 1px solid var(--primary);
+}
 
 /*-- -------------------------- -->
 <---          PRICING           -->
