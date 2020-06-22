@@ -331,6 +331,10 @@ h2 span {
     z-index: 1000;
 }
 
+body {
+    background: #000;
+}
+
 .neon {
     visibility: hidden;
     opacity: 0;

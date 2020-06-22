@@ -1,4 +1,3 @@
-
 /* jQuery for the navigation animation */
 
 var $hamburger = $(".hamburger");
@@ -60,6 +59,7 @@ var $navbarMenu = $(".navbar-menu");
 var $sideNavA = $(".side-nav a");
 var $isActiveHamburger = $(".hamburger.is-active .hamburger-inner::after");
 var $hamburgerInner = $(".hamburger-inner");
+var $neon = $(".neon");
 
 /* Body and Core Elements */
 var $body = $("body");
@@ -140,6 +140,7 @@ const enableDarkMode = () => {
   $sideNavA.addClass("dark-mode");
   $isActiveHamburger.addClass("dark-mode");
   $hamburgerInner.addClass("dark-mode");
+  $neon.addClass("dark-mode");
 
   // Landing
   $landing.addClass("dark-mode");
@@ -193,6 +194,7 @@ const disableDarkMode = () => {
   $wire.removeClass("dark-mode");
   $triangle.removeClass("dark-mode");
   $topDarkModeToggle.removeClass("dark-mode");
+  $neon.removeClass("dark-mode");
 
   $body.removeClass("dark-mode");
 
