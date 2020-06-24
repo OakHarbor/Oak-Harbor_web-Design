@@ -453,6 +453,10 @@
     }
 }
 
+.universe2 .star:nth-child(5) {
+    top: -10%;
+}
+
 #landing {
     height: 500px;
     position: relative;
