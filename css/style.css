@@ -18,7 +18,10 @@
     width: 100%;
     height: 70%;
     left: -20% !important;
-    top: 40% !important
+    top: 0% !important;
+    -webkit-transform: scaleY(-1);
+        -ms-transform: scaleY(-1);
+            transform: scaleY(-1);
 }
 
 .universe2 .satellite {
@@ -31,7 +34,10 @@
     width: 100%;
     height: 70%;
     left: -10% !important;
-    top: 0% !important
+    top: 20% !important;
+    -webkit-transform: scaleX(-1);
+        -ms-transform: scaleX(-1);
+            transform: scaleX(-1);
 }
 
 .universe3 .satellite {
@@ -229,8 +235,8 @@
     left: 48%;
     -webkit-animation: starFlicker;
             animation: starFlicker;
-    -webkit-animation-duration: 8s;
-            animation-duration: 8s;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
     -webkit-animation-iteration-count: infinite;
             animation-iteration-count: infinite;
     -webkit-animation-timing-function: ease-in-out;
@@ -325,8 +331,8 @@
     left: 56%;
     -webkit-animation: starFlicker;
             animation: starFlicker;
-    -webkit-animation-duration: 7s;
-            animation-duration: 7s;
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
     -webkit-animation-iteration-count: infinite;
             animation-iteration-count: infinite;
     -webkit-animation-timing-function: ease-in-out;
@@ -341,8 +347,8 @@
     left: 57%;
     -webkit-animation: starFlicker;
             animation: starFlicker;
-    -webkit-animation-duration: 9s;
-            animation-duration: 9s;
+    -webkit-animation-duration: 4s;
+            animation-duration: 4s;
     -webkit-animation-iteration-count: infinite;
             animation-iteration-count: infinite;
     -webkit-animation-timing-function: ease-in-out;
