@@ -453,8 +453,12 @@
     }
 }
 
-.universe2 .star:nth-child(5) {
-    top: -10%;
+.universe2 .star:nth-child(7) {
+    top: -10% !important;
+}
+
+.universe2 .star:nth-child(2) {
+    top: -15% !important;
 }
 
 #landing {
