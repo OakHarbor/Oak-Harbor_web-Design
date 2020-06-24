@@ -395,6 +395,10 @@ h3.dark-mode {
 <---          LANDING           -->
 <--- -------------------------- -*/
 
+.universe.dark-mode {
+    display: block;
+}
+
 #landing.dark-mode {
     background: rgba(0,16,153, .3);
     background: -o-linear-gradient(305deg, rgba(0,16,153,.2) 0%, rgba(58,217,255,.2) 96%);
