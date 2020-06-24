@@ -57,6 +57,8 @@
             animation-iteration-count: 1;
     -webkit-animation-timing-function: linear;
             animation-timing-function: linear;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
 }
 
 @-webkit-keyframes orbit {
@@ -67,11 +69,11 @@
                 transform: rotate(0deg);
     }
 
-    0% {
+    100% {
         top: -40%;
-        left: 110%;
-        -webkit-transform: rotate(360deg);
-                transform: rotate(360deg);
+        left: 120%;
+        -webkit-transform: rotate(560deg);
+                transform: rotate(560deg);
     }
 }
 
@@ -83,9 +85,9 @@
                 transform: rotate(0deg);
     }
 
-    0% {
+    100% {
         top: -40%;
-        left: 110%;
+        left: 120%;
         -webkit-transform: rotate(360deg);
                 transform: rotate(360deg);
     }
