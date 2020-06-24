@@ -13,11 +13,36 @@
     top: 0;
 }
 
+.universe2 {
+    position: absolute;
+    width: 100%;
+    height: 70%;
+    left: -20% !important;
+    top: 40% !important
+}
+
+.universe2 .satellite {
+    -webkit-animation-delay: 10s;
+            animation-delay: 10s;
+}
+
+.universe3 {
+    position: absolute;
+    width: 100%;
+    height: 70%;
+    left: -10% !important;
+    top: 0% !important
+}
+
+.universe3 .satellite {
+    display: none;
+}
+
 .satellite {
     width: 10px !important;
     position: absolute;
     top: 10%;
-    left: -10px;
+    left: 0px;
     -webkit-animation-name: orbit;
             animation-name: orbit;
     -webkit-animation-duration: 11s;
@@ -26,14 +51,12 @@
             animation-iteration-count: 1;
     -webkit-animation-timing-function: linear;
             animation-timing-function: linear;
-    -webkit-animation-delay: 2s;
-            animation-delay: 2s;
 }
 
 @-webkit-keyframes orbit {
     0% {
         top: 10%;
-        left: -10px;
+        left: 0px;
         -webkit-transform: rotate(0deg);
                 transform: rotate(0deg);
     }
@@ -49,7 +72,7 @@
 @keyframes orbit {
     0% {
         top: 10%;
-        left: -10px;
+        left: 0px;
         -webkit-transform: rotate(0deg);
                 transform: rotate(0deg);
     }
@@ -423,7 +446,7 @@
 }
 
 #landing {
-    height: 450px;
+    height: 500px;
     position: relative;
     margin-bottom: 150px;
     display: -webkit-box;
@@ -532,7 +555,7 @@
         -ms-flex-pack: center;
             justify-content: center;
     margin-bottom: 10px;
-    margin-top: 50px;
+    margin-top: 0px;
 }
 
 .what-we-do-topper h2 span {
@@ -1019,15 +1042,15 @@
 @media screen and (min-width: 350px) and (max-width: 420px) {
 
     #landing {
-        height: 530px;
+        height: 700px;
     }
 
     #landing .container {
-        margin-top: 100px;
+        margin-top: 180px;
     }
 
     .mock-up {
-        bottom: -280px;
+        bottom: -290px;
         width: 90%;
     }
 
