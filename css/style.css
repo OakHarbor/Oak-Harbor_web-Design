@@ -1439,7 +1439,7 @@
     }
 
     #landing {
-        height: 1200px;
+        height: 900px;
         margin-bottom: 0;
     }
 
@@ -1467,6 +1467,7 @@
 
     .swoop {
         width: 100%;
+        bottom: -300px;
     }
 
     /*-- -------------------------- -->
@@ -1474,7 +1475,8 @@
     <--- -------------------------- -*/
 
     #what-we-do {
-        margin-top: 100px;
+        position: relative;
+        z-index: 10;
     }
 
     .what-we-do-topper h2 {
