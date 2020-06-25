@@ -2,6 +2,10 @@
 <---          LANDING           -->
 <--- -------------------------- -*/
 
+.desktop-display {
+    display: none;
+}
+
 .universe {
     display: none
 }
@@ -1246,6 +1250,14 @@
     /*-- -------------------------- -->
     <---            HERO            -->
     <--- -------------------------- -*/
+
+    .desktop-display {
+        display: block;
+    }
+
+    .mobile-display {
+        display: none;
+    }
 
     .universe1 {
         height: 80%;
