@@ -378,7 +378,7 @@ h2 span {
 .neon span:nth-child(4) {
     -webkit-animation-delay: 1s;
             animation-delay: 1s;
-    margin-right: 6px;
+    margin-right: 6px !important;
 }
 .neon span:nth-child(5) {
     -webkit-animation-delay: 2s;
@@ -692,6 +692,12 @@ h2 span {
 
     .neon span {
         font-size: 2em;
+    }
+
+    .neon span:nth-child(4) {
+        -webkit-animation-delay: 1s;
+                animation-delay: 1s;
+        margin-right: 6px !important;
     }
 
 	.navbar-menu {
