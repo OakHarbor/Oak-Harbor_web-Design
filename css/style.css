@@ -1473,6 +1473,10 @@
     <---         WHAT WE DO         -->
     <--- -------------------------- -*/
 
+    #what-we-do {
+        margin-top: 100px;
+    }
+
     .what-we-do-topper h2 {
         font-size: 2.5em;
         width: auto;
