@@ -1094,7 +1094,7 @@
     <--- -------------------------- -*/
 
     #landing {
-        height: 800px;
+        height: 1000px;
     }
 
     #landing .container {
@@ -1123,7 +1123,7 @@
     <--- -------------------------- -*/
 
     #what-we-do {
-        margin-top: 300px;
+        margin-top: 0px;
     }
 
     .what-topper {
@@ -1144,7 +1144,7 @@
     /*-- -------------------------- -->
     <---           PRICING          -->
     <--- -------------------------- -*/
-    
+
     .piggy-bank {
         width: 400px;
         margin-top: 100px;
@@ -1474,20 +1474,19 @@
     <---         WHAT WE DO         -->
     <--- -------------------------- -*/
 
-    #what-we-do {
-        position: relative;
-        z-index: 10;
-    }
-
     .what-we-do-topper h2 {
         font-size: 2.5em;
         width: auto;
         width: 300px;
+        position: relative;
+        z-index: 10;
     }
 
     .what-we-do-topper p {
         width: 660px;
         margin: auto;
+        position: relative;
+        z-index: 10;
     }
 
     .what-we-do-content:before {
@@ -1667,4 +1666,13 @@
     .price-box:nth-child(2) h2 {
         background: #a7ffa4;
     }
+}
+
+/* Tablets */
+@media screen and (min-width: 1026px) and (max-width: 1260px) {
+
+    .swoop {
+        bottom: -260px;
+    }
+
 }

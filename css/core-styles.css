@@ -616,6 +616,15 @@ h2 span {
         font-size: 2em;
     }
 
+    .mobile-wrapper {
+        padding-left: 36px;
+        padding-right: 36px;
+    }
+
+    .top-dark-mode-button {
+        right: 50px !important;
+    }
+
 }
 
 /* Desktop */
@@ -662,7 +671,9 @@ h2 span {
     }
 
 	.container {
-		max-width: 1100px;
+        max-width: 1100px;
+        padding-left: 36px;
+        padding-right: 36px;
 	}
 
 	.navbar-menu img {
@@ -1288,6 +1299,14 @@ footer img {
 
 /* Tablets */
 @media screen and (min-width: 500px) and (max-width: 1025px) {
+
+    .mobile-display {
+        display: none;
+    }
+
+    .desktop-display {
+        display: block !important;
+    }
 
     .handle-line {
         width: 80px;
