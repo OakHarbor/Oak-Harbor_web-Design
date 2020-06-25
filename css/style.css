@@ -1122,6 +1122,10 @@
     <---         WHAT WE DO         -->
     <--- -------------------------- -*/
 
+    #what-we-do {
+        margin-top: 300px;
+    }
+
     .what-topper {
         width: 600px;
         margin: auto;
