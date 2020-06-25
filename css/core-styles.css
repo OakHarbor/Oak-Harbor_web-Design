@@ -621,6 +621,14 @@ h2 span {
 /* Desktop */
 @media screen and (min-width: 1025px) {
 
+    .mobile-display {
+        display: none !important;
+    }
+
+    .desktop-display {
+        display: block;
+    }
+
     /* Hidden Elements */
 	.mobile-wrapper {
 		display: none;
