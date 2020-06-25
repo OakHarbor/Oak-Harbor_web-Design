@@ -466,7 +466,7 @@
 }
 
 #landing {
-    height: 500px;
+    height: 580px;
     position: relative;
     margin-bottom: 150px;
     display: -webkit-box;
@@ -1062,7 +1062,7 @@
 @media screen and (min-width: 350px) and (max-width: 420px) {
 
     #landing {
-        height: 570px;
+        height: 650px;
     }
 
     #landing .container {
@@ -1264,17 +1264,17 @@
     }
 
     .universe1 {
-        height: 80%;
-        width: 80%;
+        height: 50%;
+        width: 100%;
         left: 0;
     }
 
     .universe2 {
         position: absolute;
-        width: 80%;
-        height: 70%;
+        width: 100%;
+        height: 40%;
         left: 0% !important;
-        top: 0% !important;
+        top: 1% !important;
         -webkit-transform: scaleX(-1);
             -ms-transform: scaleX(-1);
                 transform: scaleX(-1);
@@ -1288,8 +1288,8 @@
     .universe3 {
         position: absolute;
         width: 100%;
-        height: 70%;
-        left: -10% !important;
+        height: 50%;
+        left: 10% !important;
         top: 0% !important;
         -webkit-transform: scaleY(-1);
             -ms-transform: scaleY(-1);
@@ -1439,7 +1439,7 @@
     }
 
     #landing {
-        height: 800px;
+        height: 1200px;
         margin-bottom: 0;
     }
 
