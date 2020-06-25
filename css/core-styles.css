@@ -1332,7 +1332,7 @@ footer img {
     }
 
     .footer-img {
-        top: 0;
+        top: -2px;
         width: 110%;
     }
 
@@ -1470,6 +1470,20 @@ footer img {
 }
 
 /* Footer Alignment */
+
+@media screen and (min-width: 2000px) and (max-width: 2400px) {
+
+    footer {
+        padding-top: 580px !important;
+    }
+
+    .footer-img {
+        top: -190px;
+        width: 120%;
+    }
+
+}
+
 @media screen and (min-width: 1560px) and (max-width: 1790px) {
 
     footer {
@@ -1482,6 +1496,10 @@ footer img {
 
     footer {
         padding-top: 450px !important;
+    }
+
+    .flex-group {
+        margin-top: 80px;
     }
 
 }
