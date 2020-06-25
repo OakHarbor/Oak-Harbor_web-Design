@@ -557,6 +557,10 @@
 <---         WHAT WE DO         -->
 <--- -------------------------- -*/
 
+#what-we-do {
+    padding-top: 0 !important;
+}
+
 .what-we-do-topper h2 {
     color: #121212;
     font-size: 1.7em;
