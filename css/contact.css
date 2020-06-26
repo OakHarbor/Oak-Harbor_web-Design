@@ -13,6 +13,14 @@
     width: 100%;
 }
 
+.top-dark-mode-button:after {
+    color: #000 !important;
+}
+
+.top-dark-mode-button.dark-mode:after {
+    color: var(--primary) !important;
+}
+
 /*-- -------------------------- -->
 <---            FORM            -->
 <--- -------------------------- -*/
