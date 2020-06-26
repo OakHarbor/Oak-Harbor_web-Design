@@ -391,6 +391,18 @@ h3.dark-mode {
     color: var(--primary);
 }
 
+.blue {
+    display: block;
+}
+
+.blue.dark-mode {
+    display: none;
+}
+
+.white.dark-mode {
+    display: block;
+}
+
 /*-- -------------------------- -->
 <---          LANDING           -->
 <--- -------------------------- -*/

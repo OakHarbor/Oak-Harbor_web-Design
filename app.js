@@ -60,6 +60,8 @@ var $sideNavA = $(".side-nav a");
 var $isActiveHamburger = $(".hamburger.is-active .hamburger-inner::after");
 var $hamburgerInner = $(".hamburger-inner");
 var $neon = $(".neon");
+var $blue = $(".blue");
+var $white = $(".white");
 
 /* Body and Core Elements */
 var $body = $("body");
@@ -146,6 +148,8 @@ const enableDarkMode = () => {
   $sideNavA.addClass("dark-mode");
   $isActiveHamburger.addClass("dark-mode");
   $hamburgerInner.addClass("dark-mode");
+  $blue.addClass("dark-mode");
+  $white.addClass("dark-mode");
 
   // Landing
   $landing.addClass("dark-mode");
@@ -220,6 +224,8 @@ const disableDarkMode = () => {
   $sideNavA.removeClass("dark-mode");
   $isActiveHamburger.removeClass("dark-mode");
   $hamburgerInner.removeClass("dark-mode");
+  $blue.removeClass("dark-mode");
+  $white.removeClass("dark-mode");
 
   // Landing
   $landing.removeClass("dark-mode");
