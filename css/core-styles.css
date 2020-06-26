@@ -38,6 +38,10 @@ button:hover {
 html {
     scroll-behavior: smooth;
   }
+
+html.clicked {
+    position: fixed;
+}
   
 
 body, html {
@@ -481,7 +485,70 @@ h2 span {
 }
 
 .side-nav ul li {
-	margin-bottom: 20px;
+    margin-bottom: 20px;
+    opacity: 0;
+    -webkit-transform: translateY(50px);
+        -ms-transform: translateY(50px);
+            transform: translateY(50px);
+}
+
+.side-nav ul li.open {
+    -webkit-animation-name: fadeIn;
+            animation-name: fadeIn;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-duration: .5s;
+            animation-duration: .5s;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+}
+
+.side-nav ul li.open:nth-child(2) {
+    -webkit-animation-delay: .2s;
+            animation-delay: .2s;
+}
+
+.side-nav ul li.open:nth-child(3) {
+    -webkit-animation-delay: .4s;
+            animation-delay: .4s;
+}
+
+.side-nav ul li.open:nth-child(4) {
+    -webkit-animation-delay: .6s;
+            animation-delay: .6s;
+}
+
+.side-nav ul li.open:nth-child(5) {
+    -webkit-animation-delay: .8s;
+            animation-delay: .8s;
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        -webkit-transform: translateY(50px);
+                transform: translateY(50px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        -webkit-transform: translateY(50px);
+                transform: translateY(50px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 .side-nav a {
@@ -494,7 +561,10 @@ h2 span {
 	     -o-transition-delay: .2s;
 	        transition-delay: .2s;
 	opacity: 0;
-	visibility: hidden;
+    visibility: hidden;
+    -webkit-transform: translateY(75px);
+        -ms-transform: translateY(75px);
+            transform: translateY(75px);
 }
 
 .active-menu {
@@ -802,8 +872,15 @@ h2 span {
 		transition: .2s ease;
         font-size: 14px;
         font-weight: bold;
-	}
-
+    }
+    
+    .side-nav ul li{
+        opacity: 1;
+        -webkit-transform: translateY(0);
+            -ms-transform: translateY(0);
+                transform: translateY(0);
+    }
+    
 	.side-nav ul li a:hover {
 		cursor: pointer;
 		opacity: 1;
@@ -814,7 +891,7 @@ h2 span {
 	}
 
 	.side-nav li {
-		color: #212121;
+        color: #212121;
     }
     
     #on-top {

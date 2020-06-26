@@ -12,20 +12,30 @@ let toggleNavStatus = false;
 
 let toggleNav = function () {
     var $html = $("html");
+    var $SidebarLi = $(".side-nav ul li");
     let getSidebar = document.querySelector(".navbar-menu");
     let getSidebarUL = document.querySelector(".side-nav ul");
     let getSidebarLinks = document.querySelectorAll(".side-nav a");
     let getSidebarVisibility = document.querySelector(".side-nav");
 
     if (toggleNavStatus === false) {
+      $SidebarLi.addClass("open");
+    }
 
-      getSidebarVisibility.style.visibility = "visible"
+    else if (toggleNavStatus === true) {
+      $SidebarLi.removeClass("open");
+    }
 
-      getSidebarLinks.forEach((item, index)=>{
+    if (toggleNavStatus === false) {
+
+      getSidebarVisibility.style.visibility = "visible";
+
+      getSidebarLinks.forEach(function(item, index) {
         console.log(item);
         item.style.opacity = "1";
         item.style.visibility = "visible";
         });
+  
       getSidebar.style.width = "60%";
       $html.addClass("clicked");
       toggleNavStatus = true;
@@ -33,7 +43,7 @@ let toggleNav = function () {
 
     else if (toggleNavStatus === true) {
 
-         getSidebarLinks.forEach((item, index)=>{
+      getSidebarLinks.forEach(function(item, index) {
           item.style.opacity = "0";
           item.style.transitionDelay = "0s";
           item.style.visibility = "hidden";
