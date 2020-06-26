@@ -379,6 +379,14 @@ form p{
 
 @media screen and (min-width: 1026px) {
 
+    .blue {
+        display: block;
+    }
+
+    .white {
+        display: none !important;
+    }
+
     #contact {
         max-width: 500px;
     }

@@ -899,6 +899,10 @@ h2 span {
 <---           FOOTER           -->
 <--- -------------------------- -*/
 
+.desktop-display {
+    display: none;
+}
+
 footer {
     position: relative;
     height: auto;
@@ -1345,6 +1349,10 @@ footer img {
 }
 
 @media screen and (min-width: 1026px) {
+
+    footer .desktop-display {
+        display: block !important;
+    }
 
     footer {
         padding-top: 620px !important;

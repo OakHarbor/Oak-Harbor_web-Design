@@ -400,7 +400,7 @@ h3.dark-mode {
 }
 
 .white.dark-mode {
-    display: block;
+    display: block !important;
 }
 
 /*-- -------------------------- -->
