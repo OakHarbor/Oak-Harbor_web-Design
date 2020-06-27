@@ -1607,10 +1607,11 @@
     .example {
         width: 30%;
         margin-bottom: 70px !important;
+        height: auto;
     }
 
     .example p {
-        height: 145px;
+        height: 175px;
     }
 
     /*-- -------------------------- -->
