@@ -1498,6 +1498,11 @@
         z-index: 10;
     }
 
+    .graphic-group {
+        position: relative;
+        z-index: 100;
+    }
+
     .what-we-do-topper p {
         width: 660px;
         margin: auto;
