@@ -428,6 +428,7 @@ form p{
     #about img {
         width: 360px;
         height: 550px;
+        margin-right: 50px;
     }
 
     .section-content {
