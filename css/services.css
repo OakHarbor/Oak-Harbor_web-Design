@@ -535,6 +535,7 @@
         margin: 0;
         background: #fff;
         width: 300px;
+        height: 500px;
     }
 
     .price-box:nth-child(2) {
@@ -547,10 +548,12 @@
         background: #fff;
         position: relative;
         z-index: 1000;
+        height: auto;
     }
 
     .price-box:nth-child(2) h2 {
         background: #a7ffa4;
+        height: auto;
     }
 
     .price-box button {
