@@ -257,14 +257,14 @@
                     </div>
                 </div>
                 <div class="form-wrapper">
-                    <form id="contact" name="Contact Form" method="post" data-netlify="true">
+                    <form id="contact" name="Contact Form" method="post" data-netlify-recaptcha="true" data-netlify="true">
                         <h3 class="contact-topper"><span>DROP</span> US A LINE</h3>
                         
                             <input aria-label="name" name="name" placeholder="Your Name" type="text" tabindex="1" required>
                             <input aria-label="email" name="email" placeholder="Your Email Address" type="email" tabindex="2" required>
                             <input aria-label="phone number" name="phone" placeholder="Your Phone Number" type="tel" tabindex="3" required>
                             <textarea aria-label="write your message" name="message" placeholder="Type your Message Here...." tabindex="5" required></textarea>
-                        
+                            <div data-netlify-recaptcha="true"></div>
                         <p class="form-submit">
                             <button name="submit" type="submit" id="contact-submit" class="primary button-solid" data-submit="...Sending">Submit</button>
                         </p>
