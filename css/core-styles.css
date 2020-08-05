@@ -37,13 +37,12 @@ button:hover {
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden !important;
   }
 
 html.clicked {
     position: fixed;
 }
-
-
 
 .container.clicked {
     max-width: 100%;
