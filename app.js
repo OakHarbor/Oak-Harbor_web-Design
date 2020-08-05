@@ -12,6 +12,7 @@ let toggleNavStatus = false;
 
 let toggleNav = function () {
     var $html = $("html");
+    var $container = $(".container");
     var $SidebarLi = $(".side-nav ul li");
     let getSidebar = document.querySelector(".navbar-menu");
     let getSidebarUL = document.querySelector(".side-nav ul");
@@ -38,6 +39,7 @@ let toggleNav = function () {
   
       getSidebar.style.width = "60%";
       $html.addClass("clicked");
+      $container.addClass("clicked");
       toggleNavStatus = true;
     } 
 
@@ -50,6 +52,7 @@ let toggleNav = function () {
          });
         getSidebar.style.width = "0";
         $html.removeClass("clicked");
+       $container.removeClass("clicked");
         toggleNavStatus = false;
     }
 }
