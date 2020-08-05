@@ -44,11 +44,6 @@ html.clicked {
     position: fixed;
 }
 
-.container.clicked {
-    max-width: 100%;
-    width: 100%;
-}
-
 body, html {
 	margin: 0;
 	padding: 0;
@@ -461,7 +456,7 @@ h2 span {
     top: 0;
 	position: absolute;
 	right: 0;
-	height: 100%;
+	height: 100vh !important;
 	-webkit-transition: .3s ease-in-out;
 	-o-transition: .3s ease-in-out;
 	transition: .3s ease-in-out;
@@ -702,6 +697,11 @@ h2 span {
 
     .top-dark-mode-button {
         right: 50px !important;
+    }
+
+    .container.clicked {
+        max-width: 100%;
+        width: 100%;
     }
 
 }
