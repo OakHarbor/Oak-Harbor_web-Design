@@ -1694,6 +1694,10 @@
     .price-box:nth-child(2) h2 {
         background: #a7ffa4;
     }
+
+    .navbar-menu {
+        height: 124px !important;
+    }
 }
 
 /* Tablets */
