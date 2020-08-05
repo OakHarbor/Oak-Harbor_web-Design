@@ -802,7 +802,7 @@ h2 span {
 	.navbar-menu {
 		width: 1100px !important;
 		min-height: 100px;
-		height: 124px;
+		height: 124px !important;
 		margin: auto;
 		position: absolute;
 		display: -webkit-box;
