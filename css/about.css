@@ -437,6 +437,8 @@ form p{
 
     #circles {
         padding-bottom: 100px !important;
+        position: relative;
+        z-index: 1000;
     }
 
     .topper {
@@ -500,6 +502,66 @@ form p{
 
     .footer-img {
         top: -50px;
+    }
+
+}
+
+@media screen and (min-width: 1996px) {
+
+    footer {
+        padding-top: 0px !important;
+    }
+
+    .flex-group {
+        padding-top: 750px !important;
+    }
+
+}
+
+@media screen and (min-width: 2196px) {
+
+    footer {
+        padding-top: 0px !important;
+    }
+
+    .flex-group {
+        padding-top: 600px !important;
+    }
+
+    .footer-img {
+        top: -500px;
+    }
+
+}
+
+@media screen and (min-width: 2500px) {
+
+    footer {
+        padding-top: 0px !important;
+    }
+
+    .flex-group {
+        padding-top: 700px !important;
+    }
+
+    .footer-img {
+        top: -500px;
+    }
+
+}
+
+@media screen and (min-width: 2791px) {
+
+    footer {
+        padding-top: 0px !important;
+    }
+
+    .flex-group {
+        padding-top: 600px !important;
+    }
+
+    .footer-img {
+        top: -700px;
     }
 
 }
