@@ -1584,7 +1584,61 @@ footer img {
 
 /* Footer Alignment */
 
-@media screen and (min-width: 2000px) and (max-width: 2400px) {
+@media screen and (min-width: 2500px) {
+
+    footer {
+        padding-top: 350px !important;
+    }
+
+    .flex-group {
+        padding-top: 450px !important;
+    }
+
+    .footer-img {
+        top: -500px;
+        left: -100px;
+        width: 150%;
+    }
+
+}
+
+@media screen and (min-width: 2310px) {
+
+    footer {
+        padding-top: 250px !important;
+    }
+
+    .flex-group {
+        padding-top: 250px !important;
+    }
+
+    .footer-img {
+        top: -500px;
+        left: -100px;
+        width: 150%;
+    }
+
+}
+
+@media screen and (min-width: 2201px) {
+
+    footer {
+        padding-top: 350px !important;
+    }
+
+    .flex-group {
+        padding-top: 200px;
+    }
+
+    .footer-img {
+        top: -500px;
+        left: -100px;
+        width: 150%;
+    }
+
+}
+
+@media screen and (min-width: 2000px) and (max-width: 2200px) {
 
     footer {
         padding-top: 580px !important;
@@ -1605,7 +1659,7 @@ footer img {
 
 }
 
-@media screen and (min-width: 1300px) and (max-width: 1559px) {
+@media screen and (min-width: 1400px) and (max-width: 1559px) {
 
     footer {
         padding-top: 450px !important;
@@ -1620,11 +1674,11 @@ footer img {
 @media screen and (min-width: 1200px) and (max-width: 1399px) {
 
     footer {
-        padding-top: 250px !important;
+        padding-top: 350px !important;
     }
 
     .flex-group {
-        margin-top: 230px;
+        padding-top: 250px;
     }
 
 }
@@ -1636,7 +1690,43 @@ footer img {
     }
 
     .flex-group {
-        padding-top: 450px;
+        padding-top: 550px;
+    }
+
+}
+
+@media screen and (min-width: 2500px) {
+
+    footer {
+        padding-top: 350px !important;
+    }
+
+    .flex-group {
+        padding-top: 300px !important;
+    }
+
+    .footer-img {
+        top: -500px;
+        left: -100px;
+        width: 150%;
+    }
+
+}
+
+@media screen and (min-width: 2530px) {
+
+    footer {
+        padding-top: 200px !important;
+    }
+
+    .flex-group {
+        padding-top: 400px !important;
+    }
+
+    .footer-img {
+        top: -700px;
+        left: -100px;
+        width: 150%;
     }
 
 }
