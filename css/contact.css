@@ -386,14 +386,6 @@ form p{
         max-width: 1100px;
     }
 
-    .side-nav a {
-        color: #404040;
-    }
-
-    .active-menu {
-        color: var(--primary) !important;
-    }
-
     #valley-form {
         display: -webkit-box;
         display: -ms-flexbox;
