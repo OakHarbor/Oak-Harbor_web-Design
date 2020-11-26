@@ -509,6 +509,7 @@ body.dark-mode #page-header {
     background: url("/images/night.jpg");
     background-attachment: fixed;
     background-position: 10% 118%;
+    background-repeat: no-repeat;
 }
 
 body.dark-mode #page-header:before {
