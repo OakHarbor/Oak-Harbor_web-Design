@@ -507,9 +507,8 @@ body.dark-mode .light-swoop {
 
 body.dark-mode #page-header {
     background: url("/images/night.jpg");
-    background-attachment: fixed;
     background-size: auto;
-    background-position: 10% 100%;
+    background-position: 10% 62%;
     background-repeat: no-repeat;
 }
 
