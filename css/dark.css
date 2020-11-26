@@ -508,7 +508,7 @@ body.dark-mode .light-swoop {
 body.dark-mode #page-header {
     background: url("/images/night.jpg");
     background-attachment: fixed;
-    background-position: center 130%;
+    background-position: 10% 118%;
 }
 
 body.dark-mode #page-header:before {
@@ -728,6 +728,12 @@ body.dark-mode .box {
         height: auto !important;
     }
 
+    body.dark-mode #page-header {
+    background: url("/images/night.jpg");
+    background-attachment: fixed;
+    background-position: center 130%;
+}
+
     .dark-mode-group {
         height: 430px;
         top: -310px;
@@ -746,6 +752,12 @@ body.dark-mode .box {
         position: relative;
         margin: auto;
     }
+
+    body.dark-mode #page-header {
+    background: url("/images/night.jpg");
+    background-attachment: fixed;
+    background-position: center 130%;
+}
 
     .mobile-dark {
         display: none !important;
