@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/css/core-styles.css" media="all" type="text/css">
+    <link rel="stylesheet" href="/css/dark.css">
+    <link rel="stylesheet" href="../../blog-css/main.css" media="all" type="text/css">
+
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+
+    <!-- jQuery -->
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <title>August Blog 2021 | Honey Do Painting | Bonnors Ferry, ID</title>
+</head>
+
+<body>
+    <button id="dark-mode" aria-label="dark mode toggle">
+        <span aria-hidden="true" class="dark-toggle">
+            <span class="DTspan"></span>
+        </span>
+    </button>
+
+    <header>
+        <div class="mobile-wrapper" w3-include-html="../../includes/navigation-1.html"></div>
+        <nav w3-include-html="../../includes/navigation-2.html"></nav>
+    </header>
+
+    <section id="header">
+        <p class="container">Blog / August 2020</p>
+    </section>
+
+    <main>
+
+        <section id="blog">
+
+            <!-- ============================================ -->
+            <!--                 BLOG CONTENT                 -->
+            <!-- ============================================ -->
+
+            <article class="blog">
+                <div class="blog__post container">
+                    <div class="blog__post--header">
+                        <div aria-label="picture of a bare brick wall" class="main-image paint-brick-wall"></div>
+                        <h1>How to paint a brick fireplace</h1>
+                        <div class="blog__post--info">
+                            <img src="../../images/profile.jpeg" alt="">
+                            <div class="blog__post--profile">
+                                <h3>Victoria Sanchez</h3>
+                                <a href="august.html">August 13, 2020</a><br>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="line"></div>
+                    <p>Looking to upgrade your old brick fireplace to a more modern day look? Here we have a
+                    step by step guide on how to get the job done. Before starting this project you'll need to
+                    set aside about four to five hours of your time...
+                    </p>
+                    <button class="button-solid" onclick="location.href='august-13-how-to-paint-a-brick-fireplace.html'" type="button">
+                        Read More
+                    </button>
+                </div>
+            </article>
+        </section>
+
+        <!-- ============================================ -->
+        <!--                   SIDE BAR                   -->
+        <!-- ============================================ -->
+
+        <section id="side-bar" class="container light-side" w3-include-html="../../includes/sidebar.html"></section>
+        <section id="side-bar" class="container dark-side" w3-include-html="../../includes/sidebar-dark-mode.html"></section>
+    </main>
+
+    <footer w3-include-html="../../includes/footer.html"></footer>
+
+    <script>
+        w3.includeHTML();
+    </script>
+
+    <script defer src="/app.js"></script>
+
+    <script>
+        var ba = ["MSIE", "Trident", "Edge"];
+        var b, ua = navigator.userAgent;
+        for (var i = 0; i < ba.length; i++) {
+            if (ua.indexOf(ba[i]) > -1) {
+                b = ba[i];
+                break;
+            }
+        }
+        if (b == "MSIE" || b == "Trident" || b == "Edge") {
+            b = "Internet Explorer";
+            alert("You are using the " + b + " browser and this browser is incompatible with this website and many others.  Please open this page in a different browser, either Chrome or Firefox.  Thank you!");
+        }
+    </script>
+
+</body>
+
+</html>

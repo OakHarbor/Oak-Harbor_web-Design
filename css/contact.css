@@ -9,10 +9,6 @@
     width: 100%;
 }
 
-.top-dark-mode-button.dark-mode:after {
-    color: var(--primary) !important;
-}
-
 .mobile-wrapper {
     z-index: 2000;
 }
