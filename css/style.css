@@ -2,6 +2,10 @@
 	height: 100vh !important;
 }
 
+html.clicked {
+    position: relative;
+}
+
 /*-- -------------------------- -->
 <---          LANDING           -->
 <--- -------------------------- -*/
