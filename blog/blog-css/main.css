@@ -533,11 +533,6 @@ strong {
 
 @media screen and (min-width: 1001px) {
 
-    .recent-posts {
-        height: 600px;
-        margin-bottom: 500px;
-    }
-
     .blog {
         padding-bottom: 100px;
     }
