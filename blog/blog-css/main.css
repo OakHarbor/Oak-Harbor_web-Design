@@ -537,6 +537,11 @@ strong {
         padding-bottom: 100px;
     }
 
+    .ads {
+        display: block;
+        height: 300px;
+    }
+
     main {
         max-width: 1200px;
         margin: auto;
