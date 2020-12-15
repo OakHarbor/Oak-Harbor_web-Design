@@ -431,9 +431,9 @@ body.dark-mode .light-side {
 }
 
 .blog-h3 {
-    font-size: 2em;
-    margin-top: 70px;
-    margin-bottom: 50px;
+    font-size: 22px;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 body.dark-mode .blog__post h4 {
@@ -584,6 +584,12 @@ strong {
         padding-top: 80px;
         max-width: 860px;
         padding-bottom: 100px;
+    }
+
+    .blog-h3 {
+        font-size: 2em;
+        margin-top: 50px;
+        margin-bottom: 50px;
     }
 
     #side-bar {
