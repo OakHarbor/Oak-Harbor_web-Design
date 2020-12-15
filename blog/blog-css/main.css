@@ -562,6 +562,10 @@ strong {
         margin-top: 30px;
     }
 
+    .recent-posts button {
+        margin-bottom: 50px;
+    }
+
     #header p {
         font-size: 3em !important;
         width: 100%;
