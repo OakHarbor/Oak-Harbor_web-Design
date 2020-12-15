@@ -526,6 +526,11 @@ strong {
 
 @media screen and (min-width: 1001px) {
 
+    .recent-posts {
+        height: 600px;
+        margin-bottom: 500px;
+    }
+
     main {
         max-width: 1200px;
         margin: auto;
