@@ -540,6 +540,8 @@ strong {
     .ads {
         display: block;
         height: 300px;
+        position: relative;
+        z-index: 9000000;
     }
 
     main {
