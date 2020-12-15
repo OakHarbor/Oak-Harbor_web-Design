@@ -1053,7 +1053,7 @@ footer {
     width: auto;
     position: relative;
     top: 0px;
-    z-index: 10;
+    z-index: 0;
 }
 
 .wire {

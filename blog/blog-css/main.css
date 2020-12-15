@@ -182,6 +182,15 @@ body.dark-mode #header:before {
 <---            Blog            -->
 <--- -------------------------- -*/
 
+.ads {
+    padding: 0 2%;
+}
+
+.buffer {
+    height: 50px;
+    width: 100%;
+}
+
 body.dark-mode h3 {
     color: #fff !important;
 }
