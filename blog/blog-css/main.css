@@ -184,6 +184,8 @@ body.dark-mode #header:before {
 
 .ads {
     padding: 0 2%;
+    position: relative;
+    z-index: 9000000;
 }
 
 .buffer {
