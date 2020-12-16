@@ -535,9 +535,6 @@ strong {
 
 @media screen and (min-width: 1001px) {
 
-    .blog {
-        padding-bottom: 500px;
-    }
 
     .ads {
         display: block;
