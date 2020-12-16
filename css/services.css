@@ -111,6 +111,8 @@
 
 #updates {
     background: rgba(236,248,255, .3);
+    position: relative;
+    z-index: 90000;
 }
 
 .template button.lifetime-button {
@@ -577,6 +579,50 @@
         -o-transition: .3s ease;
         transition: .3s ease;
         background: #fff;
+    }
+
+}
+
+@media screen and (min-width: 2530px) {
+
+    .footer-img {
+        top: -562px;
+    }
+
+    #pricing {
+        margin-bottom: -100px;
+    }
+
+}
+
+@media screen and (min-width: 2530px) {
+
+    .flex-group {
+        padding-top: 500px !important;
+    }
+
+}
+
+@media screen and (min-width: 295px) {
+
+    .flex-group {
+        padding-top: 700px !important;
+    }
+
+    #pricing {
+        margin-bottom: -300px;
+    }
+
+}
+
+@media screen and (min-width: 295px) {
+
+    .flex-group {
+        padding-top: 900px !important;
+    }
+
+    #pricing {
+        margin-bottom: -500px;
     }
 
 }
