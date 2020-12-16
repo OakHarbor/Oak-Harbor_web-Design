@@ -1712,3 +1712,27 @@ html.clicked {
     }
 
 }
+
+@media screen and (min-width: 2350px) {
+
+    .swoop {
+        bottom: -484px;
+    }
+
+}
+
+@media screen and (min-width: 2900px) {
+
+    .swoop {
+        bottom: -684px;
+    }
+
+}
+
+@media screen and (min-width: 3500px) {
+
+    .swoop {
+        bottom: -784px;
+    }
+
+}
