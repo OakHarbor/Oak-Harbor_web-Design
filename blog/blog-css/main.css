@@ -536,7 +536,7 @@ strong {
 @media screen and (min-width: 1001px) {
 
     .blog {
-        padding-bottom: 100px;
+        padding-bottom: 500px;
     }
 
     .ads {
@@ -600,7 +600,7 @@ strong {
     #blog {
         padding-top: 80px;
         max-width: 860px;
-        padding-bottom: 100px;
+        padding-bottom: 400px;
     }
 
     .blog-h3 {
