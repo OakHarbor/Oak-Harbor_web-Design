@@ -625,3 +625,64 @@ strong {
     }
 
 }
+
+@media screen and (min-width: 3001px) {
+
+    nav {
+        z-index: 900000;
+    }
+
+
+    #header {
+        position: relative;
+        z-index: 200;
+    }
+
+    #blog {
+        padding-bottom: 100px;
+    }
+
+    .flex-group {
+        padding-top: 500px !important;
+    }
+
+}
+
+@media screen and (min-width: 3164px) {
+
+    #blog {
+        margin-bottom: -150px;
+    }
+
+
+    .flex-group {
+        padding-top: 600px !important;
+    }
+
+}
+
+@media screen and (min-width: 3450px) {
+
+    #blog {
+        margin-bottom: -350px;
+    }
+
+
+    .flex-group {
+        padding-top: 700px !important;
+    }
+
+}
+
+@media screen and (min-width: 3700px) {
+
+    #blog {
+        margin-bottom: -450px;
+    }
+
+
+    .flex-group {
+        padding-top: 800px !important;
+    }
+
+}
