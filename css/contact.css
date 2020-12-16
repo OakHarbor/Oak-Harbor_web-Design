@@ -13,6 +13,11 @@
     z-index: 2000;
 }
 
+#page-header {
+    position: relative;
+    z-index: 90;
+}
+
 /*-- -------------------------- -->
 <---            FORM            -->
 <--- -------------------------- -*/
@@ -451,6 +456,14 @@ form p{
 
     footer {
         padding-top: 0 !important;
+    }
+
+}
+
+@media screen and (min-width: 3500px) {
+
+    #valley-form {
+        margin-bottom: -200px;
     }
 
 }
