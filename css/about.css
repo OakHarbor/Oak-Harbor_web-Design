@@ -497,71 +497,226 @@ form p{
     }
 
     footer {
-        padding-top: 600px !important;
+        padding-top: 00px;
     }
 
     .footer-img {
-        top: -50px;
+        top: 150px;
+    }
+
+    #about-contact {
+        position: relative;
+    }
+
+    #about-contact:before {
+        content: '';
+        position: absolute;
+        display: block;
+        height: 400px;
+        width: 100%;
+        bottom: -200px;
+        background: #fff;
+        z-index: 10;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    footer {
+        padding-top: 100px;
+    }
+
+    .flex-group {
+        padding-top: 250px;
+    }
+
+}
+
+@media screen and (min-width: 1400px) {
+
+    .flex-group {
+        padding-top: 150px;
     }
 
 }
 
 @media screen and (min-width: 1996px) {
 
-    footer {
-        padding-top: 0px !important;
+    .flex-group {
+        padding-top: 350px ;
     }
 
-    .flex-group {
-        padding-top: 750px !important;
+    #about-contact {
+        position: relative;
+        -webkit-transform: translateY(300px);
+            -ms-transform: translateY(300px);
+                transform: translateY(300px);
+        z-index: 900000;
+    }
+
+    #about-contact:before {
+        bottom: 40px;
+    }
+
+    #circles {
+        padding-bottom: 0 !important;
+        overflow: visible;
+        margin-bottom: -184px;
+        z-index: 9000000;
     }
 
 }
 
-@media screen and (min-width: 2196px) {
-
-    footer {
-        padding-top: 0px !important;
-    }
+@media screen and (min-width: 2200px) {
 
     .flex-group {
-        padding-top: 600px !important;
+        padding-top: 883px !important;
     }
 
-    .footer-img {
-        top: -500px;
+    #about-contact {
+        position: relative;
+        -webkit-transform: translateY(543px);
+            -ms-transform: translateY(543px);
+                transform: translateY(543px);
+        z-index: 900000;
+    }
+
+    #about-contact:before {
+        bottom: 167px;
+    }
+
+    #circles {
+        padding-bottom: 0 !important;
+        overflow: visible;
+        margin-bottom: -489px;
+        z-index: 9000000;
+    }
+
+}
+
+
+@media screen and (min-width: 2400px) {
+
+    footer {
+        padding-top: 600px;
     }
 
 }
 
 @media screen and (min-width: 2500px) {
 
-    footer {
-        padding-top: 0px !important;
+    .flex-group {
+        padding-top: 1000px !important;
     }
 
-    .flex-group {
-        padding-top: 700px !important;
+    #circles {
+        margin-bottom: -650px;
+    }
+
+    #about-contact {
+        -webkit-transform: translateY(720px);
+            -ms-transform: translateY(720px);
+                transform: translateY(720px);
+    }
+
+    #about-contact:before {
+        bottom: 380px;
     }
 
     .footer-img {
-        top: -500px;
+        top: 31px;
+    }
+
+}
+
+@media screen and (min-width: 2530px) {
+
+    .flex-group {
+        padding-top: 1150px !important;
+    }
+
+    #circles {
+        margin-bottom: -650px;
+    }
+
+    #about-contact {
+        -webkit-transform: translateY(720px);
+            -ms-transform: translateY(720px);
+                transform: translateY(720px);
+    }
+
+    #about-contact:before {
+        bottom: 380px;
+    }
+
+    .footer-img {
+        top: 31px;
     }
 
 }
 
 @media screen and (min-width: 2791px) {
 
-    footer {
-        padding-top: 0px !important;
+    .flex-group {
+        padding-top: 1250px !important;
     }
 
+}
+
+@media screen and (min-width: 3200px) {
+
     .flex-group {
-        padding-top: 600px !important;
+        padding-top: 1350px !important;
+    }
+
+    #circles {
+        margin-bottom: -850px;
+    }
+
+    #about-contact {
+        -webkit-transform: translateY(920px);
+            -ms-transform: translateY(920px);
+                transform: translateY(920px);
+    }
+
+    #about-contact:before {
+        bottom: 580px;
     }
 
     .footer-img {
-        top: -700px;
+        top: 31px;
+    }
+
+}
+
+@media screen and (min-width: 3500px) {
+
+    .flex-group {
+        padding-top: 1550px !important;
+    }
+
+    #circles {
+        margin-bottom: -1000px;
+    }
+
+    #about-contact {
+        -webkit-transform: translateY(1090px);
+            -ms-transform: translateY(1090px);
+                transform: translateY(1090px);
+    }
+
+    #about-contact:before {
+        bottom: 880px;
+        z-index: -1;
+    }
+
+    .footer-img {
+        top: 31px;
+    }
+
+    #about .container {
+        position: relative;
+        z-index: 9000000;
     }
 
 }
