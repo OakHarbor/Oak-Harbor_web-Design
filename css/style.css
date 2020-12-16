@@ -1731,10 +1731,42 @@ html.clicked {
 
 }
 
+@media screen and (min-width: 3000px) {
+
+    .flex-group {
+        padding-top: 500px !important;
+    }
+
+}
+
+@media screen and (min-width: 3280px) {
+
+    .flex-group {
+        padding-top: 700px !important;
+    }
+
+    #prices {
+        margin-bottom: -200px;
+    }
+
+}
+
 @media screen and (min-width: 3500px) {
 
     .swoop {
         bottom: -784px;
+    }
+
+}
+
+@media screen and (min-width: 3280px) {
+
+    .flex-group {
+        padding-top: 800px !important;
+    }
+
+    #prices {
+        margin-bottom: -370px;
     }
 
 }
