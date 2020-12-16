@@ -567,6 +567,8 @@ html.clicked {
 
 #what-we-do {
     padding-top: 0 !important;
+    position: relative;
+    z-index: 90000;
 }
 
 .what-we-do-topper h2 {
