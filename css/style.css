@@ -846,6 +846,7 @@ html.clicked {
 #who-we-are {
     position: relative;
     margin-bottom: 100px;
+    z-index: 900000;
 }
 
 .who-topper h2 {
