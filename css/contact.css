@@ -429,3 +429,28 @@ form p{
     }
 
 }
+
+
+@media screen and (min-width: 2900px) {
+
+    .flex-group {
+        padding-top: 700px !important;
+    }
+
+    footer {
+        padding-top: 0 !important;
+    }
+
+}
+
+@media screen and (min-width: 3200px) {
+
+    .flex-group {
+        padding-top: 900px !important;
+    }
+
+    footer {
+        padding-top: 0 !important;
+    }
+
+}
