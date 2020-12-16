@@ -201,6 +201,8 @@ body.dark-mode h3 {
 .blog {
     margin-top: 50px;
     padding-bottom: 50px;
+    position: relative;
+    z-index: 90000000;
 }
 
 .blog__post--header img {
