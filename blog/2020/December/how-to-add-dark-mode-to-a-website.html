@@ -218,7 +218,7 @@
                             /*CSS for Dark Mode Toggle
                             
                             Copy and paste this code into it's own dark.css file. Keep all you dark mode 
-                            styles there, and make sure when you link to this sheet in your html heads, 
+                            styles there, and make sure when you link to this sheet in your html head, 
                             make it the bottom css link tag so it overrides all other styles.
                             At the bottom, that's where you start to add your dark mode styles by 
                             starting starting with "body.dark-mode" and add your class you want to 
@@ -385,7 +385,7 @@
                         
                             // Add this to your javascript file
                             
-                            /* Body and Core Elements */
+                            /* Body */
                             const body = document.querySelector('body');
                             
                             // Dark Mode Action
@@ -420,8 +420,8 @@
                             })
                             
                             // Footer button, optional. This is for if you have a second dark mode toggle button 
-                            in the footer, just make sure the button is inside the footer tag, and it will be 
-                            linked to this function.
+                            //in the footer, just make sure the button is inside the footer tag, and it will be 
+                            //linked to this function.
                             
                                 darkModeToggleFooter.addEventListener('click', () => {
                                     darkMode = localStorage.getItem("darkMode");
