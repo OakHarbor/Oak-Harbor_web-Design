@@ -950,31 +950,6 @@ h2 span {
         .call-us {display: none;}
     }
 
-    /* width */
-    ::-webkit-scrollbar-track {
-        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-        background-color: #fff;
-    }
-
-    ::-webkit-scrollbar-track-piece {
-        background-color: #000;
-    }
-
-    ::-webkit-scrollbar {
-        width: 7px;
-        background-color: #F5F5F5;
-    }
-
-    ::-webkit-scrollbar-thumb {
-        border-radius: 10px;
-        background-image: -webkit-gradient(linear,
-                                        left bottom,
-                                        left top,
-                                        color-stop(0.44, rgba(0,221,246,1)),
-                                        color-stop(0.72, var(--primary)),
-                                        color-stop(0.86, rgba(67,183,255,1)));
-    }
-
 }
 
 

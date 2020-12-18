@@ -27,6 +27,8 @@
     <link rel="stylesheet" href="/css/dark.css">
     <link rel="stylesheet" href="../../blog-css/main.css" media="all" type="text/css">
 
+    <link rel="stylesheet" href="/css/prism.css">
+
     <script src="https://www.w3schools.com/lib/w3.js"></script>
 
     <!-- Favicons -->
@@ -48,7 +50,7 @@
     <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
     <!--Code styling-->
-    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+    
 
     <!--Adsense-->
     <script data-ad-client="ca-pub-9902602223629429" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -185,16 +187,263 @@
                     </p>
                     <h3 class="blog-h3">Adding dark mode to your website in less than 5 minutes</h3>
                     <p>
-                        To get right to it, follow this link to my <a class="blog-link" href="https://codepen.io/Oak-Harbor-Web-Designs/pen/pobmjrB">Codepen</a> to copy and paste my dark mode code to add the button and functionality to your website instantly.
+                        To get right to it, here's the code for adding dark mode to your website.  All you have to do is copy and paste the html, css, and js into your project and use this selector in your dark.css to target a class to add the dark mode styles to:
+
                     </p>
+                    <pre aria-hidden="true">
+                        <code class="language-css">
+                        
+                            body.dark-mode .targetElement {
+                                background: #000000;
+                            }
+                        
+                        </code>
+                    </pre>
+                    <h2>HTML</h2>
+                    <pre aria-hidden="true">
+                        <code class="language-markup">
+                        
+                            &lt;button class="dark-mode-button top-dark-mode-button" aria-label="dark mode toggle"&gt;
+                                &lt;span aria-hidden="true" class="dark-toggle"&gt;
+                                    &lt;span class="DTspan"&gt;&lt;/span&gt;
+                                &lt;/span&gt;
+                            &lt;/button&gt;
+                        
+                        </code>
+                    </pre>
+                    <h2>CSS</h2>
+                    <pre aria-hidden="true">
+                        <code class="language-css">
+                        
+                            /*CSS for Dark Mode Toggle
+                            
+                            Copy and paste this code into it's own dark.css file. Keep all you dark mode 
+                            styles there, and make sure when you link to this sheet in your html heads, 
+                            make it the bottom css link tag so it overrides all other styles.
+                            At the bottom, that's where you start to add your dark mode styles by 
+                            starting starting with "body.dark-mode" and add your class you want to 
+                            target at the end. For example,
+                            
+                            body.dark-mode .heading-one {}
+                            
+                            then add your css properties like normal. That's it!
+                            Scroll to the bottom to start adding your dark mode styles
+                            
+                            */
+                            
+                            :root {
+                                --dark: #000;
+                                --medium: #1b1b1b;
+                                --light: #2e2e2e;
+                            }
+                            
+                            .dark-mode-button {
+                                background: transparent;
+                                border: none;
+                                height: 40px;
+                                width: 30px;
+                                display: -webkit-box;
+                                display: -ms-flexbox;
+                                display: flex;
+                                -webkit-box-orient: vertical;
+                                -webkit-box-direction: normal;
+                                -ms-flex-direction: column;
+                                flex-direction: column;
+                                -webkit-box-pack: center;
+                                -ms-flex-pack: center;
+                                justify-content: center;
+                                -webkit-box-align: center;
+                                -ms-flex-align: center;
+                                align-items: center;
+                            }
+                            
+                            .top-dark-mode-button {
+                                position: absolute;
+                                top: 60px;
+                                right: 15px;
+                                -webkit-transform: rotate(-90deg);
+                                -ms-transform: rotate(-90deg);
+                                transform: rotate(-90deg);
+                                z-index: 1000;
+                                -webkit-transition: .3s ease-in;
+                                -o-transition: .3s ease-in;
+                                transition: .3s ease-in;
+                            }
+                            
+                            .top-dark-mode-button .dark-toggle {
+                                background: rgb(230, 230, 230);
+                                border-color: rgb(230, 230, 230);
+                                width: 35px;
+                            }
+                            
+                            .top-dark-mode-button:after {
+                                content: 'DARK';
+                                position: absolute;
+                                color: #fff;
+                                -webkit-transform: rotate(90deg);
+                                -ms-transform: rotate(90deg);
+                                transform: rotate(90deg);
+                                right: 22px;
+                                top: 10px;
+                                -webkit-transition: .1s ease-in;
+                                -o-transition: .1s ease-in;
+                                transition: .1s ease-in;
+                            }
+                            
+                            body.dark-mode .top-dark-mode-button:after {
+                                content: 'LIGHT';
+                                color: var(--primary);
+                                top: 12px;
+                            }
+                            
+                            .dark-toggle {
+                                margin: 0;
+                                width: 30px;
+                                height: 16px;
+                                z-index: 20;
+                                border-radius: 10px;
+                                background: transparent;
+                                border: 3px solid #fff;
+                                display: -webkit-box;
+                                display: -ms-flexbox;
+                                display: flex;
+                                -webkit-box-align: center;
+                                -ms-flex-align: center;
+                                align-items: center;
+                                -webkit-transition: .3s ease;
+                                -o-transition: .3s ease;
+                                transition: .3s ease;
+                                display: flex;
+                                -webkit-box-pack: center;
+                                -ms-flex-pack: center;
+                                justify-content: center;
+                                z-index: 1000;
+                                display: flex;
+                                -webkit-box-orient: horizontal;
+                                -webkit-box-direction: normal;
+                                -ms-flex-direction: row;
+                                flex-direction: row;
+                                align-items: center;
+                                -webkit-transform: rotate(90deg);
+                                -ms-transform: rotate(90deg);
+                                transform: rotate(90deg);
+                            }
+                            
+                            body.dark-mode .dark-toggle {
+                                background: rgb(67,183,255);
+                                background: -o-linear-gradient(left, rgba(67,183,255,1) 0%, rgba(0,221,246,1) 100%);
+                                background: -webkit-gradient(linear, left top, right top, from(rgba(67,183,255,1)), to(rgba(0,221,246,1)));
+                                background: linear-gradient(90deg, rgba(67,183,255,1) 0%, rgba(0,221,246,1) 100%);
+                                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#43b7ff",endColorstr="#00ddf6",GradientType=1);
+                                border: none;
+                            }
+                            
+                            .dark-toggle span {
+                                height: 20px;
+                                width: 20px;
+                                left: -8px;
+                                border-radius: 50%;
+                                background: #fff;
+                                position: absolute;
+                                -webkit-transition: .3s ease;
+                                -o-transition: .3s ease;
+                                transition: .3s ease;
+                                -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+                                box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+                            }
+                            
+                            body.dark-mode .dark-toggle span {
+                                left: 15px;
+                                -webkit-transition: .3s ease;
+                                -o-transition: .3s ease;
+                                transition: .3s ease;
+                            }
+                            
+                            .top-dark-mode-button .dark-toggle {
+                                background: rgb(230, 230, 230);
+                                border-color: rgb(230, 230, 230);
+                                width: 35px;
+                            }
+                            
+                            
+                            /* Begin adding your dark mode styles here, like so: */
+                            
+                            body.dark-mode {
+                                background: #000
+                            }
+                            
+                            body.dark-mode p {
+                                color: #fff
+                            }
+                        
+                        </code>
+                    </pre>
+                    <h2>JAVSCRIPT</h2>
+                    <pre aria-hidden="true">
+                        <code class="language-js">
+                        
+                            // Add this to your javascript file
+                            
+                            /* Body and Core Elements */
+                            const body = document.querySelector('body');
+                            
+                            // Dark Mode Action
+                            let darkMode = localStorage.getItem("darkMode");
+                            const darkModeToggle = document.querySelector('.dark-mode-button');
+                            const darkModeToggleFooter = document.querySelector('footer .dark-mode-button');
+                            
+                            // Enable Dark Mode
+                            const enableDarkMode = () => {
+                                body.classList.add("dark-mode");
+                                localStorage.setItem("darkMode", "enabled")
+                            }
+                            
+                            // Disable Dark Mode
+                            const disableDarkMode = () => {
+                                body.classList.remove("dark-mode");
+                                localStorage.setItem("darkMode", null)
+                            }
+                            
+                            if (darkMode == "enabled") {
+                                enableDarkMode();
+                            }
+                            
+                            // Desktop Button
+                            darkModeToggle.addEventListener('click', () => {
+                                darkMode = localStorage.getItem("darkMode");
+                                if (darkMode !== "enabled") {
+                                    enableDarkMode();
+                                } else {
+                                    disableDarkMode();
+                                }
+                            })
+                            
+                            // Footer button, optional. This is for if you have a second dark mode toggle button 
+                            in the footer, just make sure the button is inside the footer tag, and it will be 
+                            linked to this function.
+                            
+                                darkModeToggleFooter.addEventListener('click', () => {
+                                    darkMode = localStorage.getItem("darkMode");
+                                    if (darkMode !== "enabled") {
+                                        enableDarkMode();
+                                    } else {
+                                        disableDarkMode();
+                                    }
+                                })
+                        
+                        </code>
+                    </pre>
                     <p>
                         All you have to do is add the html button wherever you want it, add the dark.css to all your pages, copy and paste the dark mode javascript into your javascript file, and on the dark.css file, just write:
                     </p>
-                    <pre class="prettyprint">
-
-    body.dark-mode #updates {
-        background: #000000;
-    }
+                    <pre aria-hidden="true">
+                        <code class="language-css">
+                        
+                            body.dark-mode #updates {
+                                background: #000000;
+                            }
+                        
+                        </code>
                     </pre>
                     <br>
                     <p>
@@ -342,6 +591,7 @@
     </script>
 
     <script defer src="/app.js"></script>
+    <script src="/prism.js"></script>
 
     <script>
         var ba = ["MSIE", "Trident", "Edge"];
