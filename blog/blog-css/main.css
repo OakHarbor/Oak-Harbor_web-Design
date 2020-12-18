@@ -8,6 +8,14 @@ pre {
     max-height: 300px;
 }
 
+.code-h2 {
+    margin: 50px 0 10px;
+}
+
+.extra-margin {
+    margin-top: 20px;
+}
+
 .blog-link {
     text-decoration: underline;
     color: var(--primary);
