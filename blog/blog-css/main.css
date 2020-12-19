@@ -25,6 +25,10 @@ a {
     text-decoration: none;
 }
 
+#side-bar .button-solid {
+    width: 140px;
+}
+
 .button-solid:hover {
     background: transparent;
 }
@@ -591,6 +595,10 @@ strong {
 
     .flex-group {
         padding-top: 400px;
+    }
+
+    .recent-posts button.home {
+        margin-bottom: 20px !important;
     }
 
 }
