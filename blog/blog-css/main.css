@@ -38,6 +38,13 @@ a {
     color: #222;
 }
 
+/* Pictures */
+
+.christmas {
+    background: url("../images/christmas.jpg");
+    background-size: cover;
+}
+
 .paint-brick-wall {
     background: url("../images/painting-brick-wall.jpg");
     background-size: cover;
