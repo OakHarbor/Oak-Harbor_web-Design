@@ -603,10 +603,10 @@
 
 }
 
-@media screen and (min-width: 295px) {
+@media screen and (min-width: 2895px) {
 
     .flex-group {
-        padding-top: 700px !important;
+        padding-top: 600px !important;
     }
 
     #pricing {
@@ -615,7 +615,19 @@
 
 }
 
-@media screen and (min-width: 295px) {
+@media screen and (min-width: 3200px) {
+
+    .flex-group {
+        padding-top: 800px !important;
+    }
+
+    #pricing {
+        margin-bottom: -500px;
+    }
+
+}
+
+@media screen and (min-width: 3600px) {
 
     .flex-group {
         padding-top: 900px !important;
