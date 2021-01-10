@@ -147,6 +147,7 @@ h1, h2, h3, h4, h5, h6 {
 
 body.dark-mode #header{
     background: url("../images/night.jpg");
+    background-size: cover;
 }
 
 body.dark-mode #header:before {
